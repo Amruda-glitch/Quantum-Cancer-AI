@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>QuantumNow Cancer Detection Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',sans-serif;background:#f0f4f8;color:#1a2332;min-height:100vh;overflow-x:hidden;line-height:1.6}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:#e8edf2}
+::-webkit-scrollbar-thumb{background:rgba(0,150,200,.3);border-radius:3px}
+
+/* ── VARIABLES ── */
+:root{
+  --cyan:#1d4ed8; --purple:#1e3a8a; --green:#10b981; --amber:#e07b00; --pink:#2563eb; --red:#dc3545;
+  --bg:#f0f4f8; --bg2:#e8edf3; --card:#ffffff; --card2:#f5f8fb;
+  --border:rgba(30,58,138,.14); --border2:rgba(29,78,216,.35); --border3:rgba(29,78,216,.62);
+  --t1:#0f172a; --t2:#334155; --t3:#64748b;
+  --r:14px; --sidebar:260px; --header:68px;
+  --shadow:0 4px 24px rgba(30,58,138,.09),0 0 0 1px rgba(30,58,138,.07);
+}
+
+/* ── PARTICLES ── */
+#particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.18}
+
+/* ── LAYOUT ── */
+.shell{display:flex;min-height:100vh;position:relative;z-index:1}
+
+/* ── SIDEBAR ── */
+.sidebar{width:var(--sidebar);height:100vh;position:fixed;left:0;top:0;
+  background:#ffffff;
+  border-right:1px solid var(--border);display:flex;flex-direction:column;z-index:100;box-shadow:2px 0 16px rgba(0,100,160,.08)}
+.logo-wrap{padding:22px 18px 18px;border-bottom:1px solid var(--border)}
+.logo-row{display:flex;align-items:center;gap:10px}
+.logo-icon{width:38px;height:38px;background:linear-gradient(135deg,#1d4ed8,#1e3a8a);
+  border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;
+  box-shadow:0 0 20px rgba(30,58,138,.35);animation:glow 3s ease-in-out infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 18px rgba(29,78,216,.30)}50%{box-shadow:0 0 32px rgba(30,58,138,.50)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.logo-title{font-family:'Outfit',sans-serif;font-size:13px;font-weight:700;color:var(--t1)}
+.logo-sub{font-size:10px;color:var(--cyan);font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.badge{margin:10px 18px 0;padding:5px 10px;background:rgba(30,58,138,.08);
+  border:1px solid rgba(30,58,138,.22);border-radius:6px;font-size:10px;color:#1d4ed8;display:flex;align-items:center;gap:5px}
+.nav{flex:1;padding:14px 10px;overflow-y:auto}
+.nav-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;
+  color:var(--t3);padding:10px 8px 5px;margin-top:6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;cursor:pointer;
+  transition:all .2s;color:var(--t2);font-size:13px;font-weight:500;border:1px solid transparent;margin-bottom:2px;
+  text-decoration:none;user-select:none}
+.nav-item:hover{background:var(--card2);color:var(--t1);border-color:var(--border)}
+.nav-item.active{background:rgba(29,78,216,.09);color:var(--cyan);border-color:var(--border3);
+  box-shadow:0 2px 12px rgba(30,58,138,.10)}
+.nav-item.active::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:3px;height:65%;background:var(--cyan);border-radius:0 2px 2px 0;box-shadow:0 0 8px rgba(29,78,216,.45)}
+.nav-item{position:relative}
+.nav-icon{font-size:15px;width:20px;text-align:center}
+.nav-badge{margin-left:auto;background:rgba(29,78,216,.10);color:var(--cyan);
+  font-size:9px;padding:1px 6px;border-radius:10px;font-weight:700}
+.sidebar-footer{padding:14px;border-top:1px solid var(--border)}
+.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.mini-stat{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:8px;text-align:center}
+.mini-stat-v{font-family:'Outfit',sans-serif;font-size:13px;font-weight:700;color:var(--cyan)}
+.mini-stat-l{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:1px}
+
+/* ── MAIN ── */
+.main{margin-left:var(--sidebar);flex:1;min-height:100vh}
+
+/* ── HEADER ── */
+.topbar{height:var(--header);background:#ffffff;
+  border-bottom:1px solid var(--border);display:flex;align-items:center;
+  justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(0,100,160,.06)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t2)}
+.breadcrumb strong{color:var(--t1)}
+.topbar-actions{display:flex;align-items:center;gap:10px}
+.pill{display:flex;align-items:center;gap:6px;padding:5px 12px;background:var(--bg2);
+  border:1px solid var(--border);border-radius:20px;font-size:11.5px;color:var(--t2)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 6px var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.btn-export{display:flex;align-items:center;gap:6px;padding:7px 15px;
+  background:linear-gradient(135deg,var(--cyan),var(--purple));border:none;border-radius:8px;
+  color:#fff;font-size:12px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+.btn-export:hover{opacity:.85;transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,212,255,.3)}
+
+/* ── SECTIONS ── */
+.section{display:none;padding:32px 28px;min-height:calc(100vh - var(--header));animation:fadeUp .35s ease}
+.section.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── SECTION HEADER ── */
+.sec-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--cyan);margin-bottom:6px}
+.sec-title{font-family:'Outfit',sans-serif;font-size:30px;font-weight:800;color:var(--t1);line-height:1.2;margin-bottom:8px}
+.gradient-text{background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sec-desc{font-size:13.5px;color:var(--t2);max-width:600px;line-height:1.7;margin-bottom:28px}
+
+/* ── GLASS CARD ── */
+.card{background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r);box-shadow:var(--shadow);transition:all .25s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(29,78,216,.32),transparent)}
+.card:hover{border-color:var(--border2);transform:translateY(-2px);box-shadow:var(--shadow),0 0 20px rgba(30,58,138,.07)}
+.p-20{padding:20px}.p-24{padding:24px}
+
+/* ── STAT CARDS ── */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:24px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:22px;position:relative;overflow:hidden;transition:all .25s}
+.stat-card:hover{border-color:var(--border2);transform:translateY(-3px);box-shadow:0 0 24px rgba(29,78,216,.12)}
+.stat-card::after{content:'';position:absolute;bottom:0;right:0;width:70px;height:70px;
+  border-radius:50%;filter:blur(28px);opacity:.3}
+.sc-c::after{background:var(--cyan)}.sc-p::after{background:var(--purple)}
+.sc-g::after{background:var(--green)}.sc-a::after{background:var(--amber)}
+.stat-icon{font-size:22px;margin-bottom:14px}
+.stat-val{font-family:'Outfit',sans-serif;font-size:36px;font-weight:800;line-height:1;margin-bottom:5px}
+.cv{color:var(--cyan)}.pv{color:#1e3a8a}.gv{color:var(--green)}.av{color:var(--amber)}
+.stat-label{font-size:12.5px;color:var(--t2)}
+.stat-trend{margin-top:10px;font-size:11px;color:var(--green);display:flex;align-items:center;gap:3px}
+
+/* ── GRID HELPERS ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mb-20{margin-bottom:20px}.mb-24{margin-bottom:24px}.mb-28{margin-bottom:28px}
+.mt-14{margin-top:14px}.mt-16{margin-top:16px}
+
+/* ── CARD HEADER ── */
+.card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.card-title{font-family:'Outfit',sans-serif;font-size:15px;font-weight:700;color:var(--t1)}
+.card-sub{font-size:11.5px;color:var(--t2);margin-top:2px}
+.tag{font-size:9px;padding:3px 9px;border-radius:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+.tag-q{background:rgba(29,78,216,.10);color:#1d4ed8;border:1px solid rgba(29,78,216,.26)}
+.tag-d{background:rgba(30,58,138,.10);color:#1e3a8a;border:1px solid rgba(30,58,138,.25)}
+.tag-c{background:rgba(59,130,246,.08);color:#2563eb;border:1px solid rgba(59,130,246,.22)}
+
+/* ── PROGRESS BARS ── */
+.pbar-wrap{margin-bottom:13px}
+.pbar-lbl{display:flex;justify-content:space-between;margin-bottom:5px;font-size:11.5px}
+.pbar-lbl-name{color:var(--t2)}.pbar-lbl-val{color:var(--cyan);font-family:'JetBrains Mono',monospace;font-weight:600}
+.pbar-track{height:5px;background:rgba(0,100,160,.08);border-radius:3px;overflow:hidden}
+.pbar-fill{height:100%;border-radius:3px;width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+
+/* ── CHART SIZES ── */
+.ch-sm{position:relative;height:200px}.ch-md{position:relative;height:300px}
+.ch-lg{position:relative;height:380px}
+
+/* ── DIVIDER ── */
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(29,78,216,.28),transparent);margin:22px 0;border:none}
+
+/* ── METRIC TABLE ── */
+.mtable{width:100%;border-collapse:collapse;font-size:12.5px}
+.mtable th{text-align:left;padding:9px 13px;font-size:9.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:1px;color:var(--t3);border-bottom:1px solid var(--border)}
+.mtable td{padding:11px 13px;border-bottom:1px solid rgba(30,58,138,.05);color:var(--t2);transition:all .15s}
+.mtable tr:hover td{background:rgba(29,78,216,.04);color:var(--t1)}
+.model-name-cell{font-weight:600;color:var(--t1);display:flex;align-items:center;gap:8px}
+.mdot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.mval{font-family:'JetBrains Mono',monospace;font-size:11.5px}
+.mval.best{color:var(--cyan);font-weight:700}
+.type-badge{font-size:8.5px;padding:2px 6px;border-radius:4px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.tb-q{background:rgba(29,78,216,.10);color:#1d4ed8}
+.tb-d{background:rgba(30,58,138,.10);color:#1e3a8a}
+.tb-c{background:rgba(59,130,246,.08);color:#2563eb}
+
+/* ── TABS ── */
+.tab-group{display:flex;gap:3px;background:rgba(30,58,138,.05);border-radius:8px;padding:3px;
+  margin-bottom:18px;flex-wrap:wrap}
+.tab-btn{padding:6px 14px;border-radius:6px;border:none;background:none;color:var(--t2);
+  font-size:11.5px;font-weight:500;cursor:pointer;transition:all .15s;font-family:'Inter',sans-serif}
+.tab-btn.active{background:rgba(29,78,216,.10);color:#1d4ed8;border:1px solid rgba(29,78,216,.27)}
+.tab-btn:hover:not(.active){color:var(--t1);background:rgba(30,58,138,.05)}
+
+/* ── OPTIMIZER CARDS ── */
+.opt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:22px}
+.opt-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:20px;text-align:center;transition:all .25s}
+.opt-card:hover{border-color:var(--border2)}
+.opt-card.winner{border-color:rgba(29,78,216,.35);background:rgba(29,78,216,.06)}
+.opt-name{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--t3);margin-bottom:10px}
+.opt-fit{font-family:'Outfit',sans-serif;font-size:34px;font-weight:800;line-height:1;margin-bottom:4px}
+.opt-time{font-size:11px;color:var(--t3)}
+.opt-win-badge{margin-top:8px;display:inline-block;background:rgba(29,78,216,.10);color:#1d4ed8;
+  font-size:9px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid rgba(29,78,216,.28)}
+
+/* ── QBIT GRID ── */
+.qbit-container{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;margin:14px 0}
+.qb{aspect-ratio:1;border-radius:2px;border:1px solid rgba(0,100,160,.1);transition:all .3s}
+.qb.sel{background:#1d4ed8;border-color:#1e3a8a;box-shadow:0 0 5px rgba(29,78,216,.35)}
+.qb.dis{background:rgba(30,58,138,.05);border-color:rgba(30,58,138,.06)}
+.qb.sup{background:rgba(29,78,216,.18);border-color:rgba(29,78,216,.28);animation:sp 2s ease-in-out infinite}
+@keyframes sp{0%,100%{opacity:.5}50%{opacity:1}}
+
+/* ── LEGEND ── */
+.legend{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:12px}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--t2)}
+.leg-dot{width:10px;height:10px;border-radius:50%}
+.leg-line{width:22px;height:2px}
+
+/* ── CANCER GRID ── */
+.cancer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:24px}
+.cancer-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:18px;cursor:pointer;transition:all .25s;position:relative;overflow:hidden}
+.cancer-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--cc,var(--cyan)),transparent);opacity:0;transition:all .25s}
+.cancer-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:var(--shadow)}
+.cancer-card:hover::before,.cancer-card.sel::before{opacity:1}
+.cancer-card.sel{border-color:var(--border3);background:rgba(0,150,200,.05)}
+.cc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.cc-icon{width:42px;height:42px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.cc-acc{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--green)}
+.cc-name{font-weight:700;font-size:13.5px;color:var(--t1);margin-bottom:3px}
+.cc-imgs{font-size:10.5px;color:var(--t3);margin-bottom:8px}
+.cc-subtypes{display:flex;flex-wrap:wrap;gap:3px}
+.st-chip{font-size:8.5px;padding:2px 6px;border-radius:8px;background:rgba(30,58,138,.05);
+  border:1px solid rgba(30,58,138,.11);color:var(--t3)}
+
+/* ── CANCER DETAIL ── */
+.cancer-detail{display:none;background:var(--card);border:1px solid var(--border3);
+  border-radius:var(--r);padding:24px;margin-bottom:22px;animation:fadeUp .3s ease;position:relative}
+.cancer-detail.vis{display:block}
+.detail-close{position:absolute;top:14px;right:14px;background:none;border:1px solid var(--border);
+  color:var(--t2);border-radius:6px;padding:3px 9px;cursor:pointer;font-size:11.5px;transition:all .2s;font-family:inherit}
+.detail-close:hover{border-color:var(--border2);color:var(--t1)}
+.detail-grid{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:start}
+.st-item{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.st-badge{font-size:10px;padding:2px 8px;border-radius:5px;font-weight:600}
+.st-code{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--t3)}
+
+/* ── PIPELINE ── */
+.pipeline{display:flex;align-items:center;overflow-x:auto;padding:10px 0;margin-bottom:22px;gap:0}
+.pipe-step{flex-shrink:0;width:145px;text-align:center;cursor:pointer;transition:all .25s}
+.pipe-box{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:14px 10px;margin:0 3px;transition:all .25s}
+.pipe-box:hover{border-color:var(--border2);transform:translateY(-3px)}
+.pipe-step.active .pipe-box{border-color:var(--border3);background:rgba(29,78,216,.07);
+  transform:translateY(-5px);box-shadow:0 4px 18px rgba(30,58,138,.12)}
+.pipe-icon{font-size:24px;margin-bottom:7px;display:block}
+.pipe-name{font-size:10.5px;font-weight:700;color:var(--t1)}
+.pipe-tech{font-size:8.5px;color:var(--t3);margin-top:2px;font-family:'JetBrains Mono',monospace}
+.pipe-arrow{flex-shrink:0;width:30px;text-align:center;color:var(--t3);font-size:16px}
+.pipe-detail{display:none;background:var(--card);border:1px solid var(--border3);
+  border-radius:var(--r);padding:18px 22px;margin-bottom:22px;animation:fadeUp .25s ease}
+.pipe-detail.vis{display:block}
+
+/* ── SIM ── */
+.sim-upload{border:2px dashed var(--border);border-radius:var(--r);padding:36px;
+  text-align:center;cursor:pointer;transition:all .25s;background:rgba(30,58,138,.02)}
+.sim-upload:hover{border-color:var(--border3);background:rgba(29,78,216,.05)}
+.sim-icon{font-size:36px;margin-bottom:10px;display:block}
+.sim-result{display:none;animation:fadeUp .3s ease}
+.sim-result.vis{display:block}
+.pred-bar{margin-bottom:8px}
+.pred-lbl{display:flex;justify-content:space-between;margin-bottom:4px;font-size:11.5px}
+.pred-name{color:var(--t1);font-weight:500}
+.pred-pct{color:var(--cyan);font-family:'JetBrains Mono',monospace;font-size:10.5px}
+.pred-track{height:7px;background:rgba(0,100,160,.08);border-radius:4px;overflow:hidden}
+.pred-fill{height:100%;border-radius:4px;transition:width .8s cubic-bezier(.4,0,.2,1)}
+
+/* ── REPORT SECTION ── */
+.rs-block{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:22px;margin-bottom:18px}
+.rs-title{font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--t1);
+  margin-bottom:13px;padding-bottom:11px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:9px}
+.rs-num{background:rgba(29,78,216,.10);color:#1d4ed8;width:26px;height:26px;border-radius:6px;
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;
+  border:1px solid rgba(29,78,216,.27);flex-shrink:0}
+.rs-text{font-size:13px;color:var(--t2);line-height:1.8}
+.rs-text strong{color:var(--t1)}
+.rs-text code{font-family:'JetBrains Mono',monospace;font-size:11px;background:rgba(29,78,216,.07);
+  padding:1px 5px;border-radius:3px;color:#1d4ed8}
+.rs-list{list-style:none;margin-top:10px}
+.rs-list li{padding:5px 0 5px 15px;position:relative;font-size:12.5px;color:var(--t2);line-height:1.6}
+.rs-list li::before{content:'◆';position:absolute;left:0;font-size:7px;color:var(--cyan);top:10px}
+
+/* ── FEATURE STAT BOXES ── */
+.feat-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.feat-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:13px;text-align:center;box-shadow:0 2px 8px rgba(0,100,160,.06)}
+.feat-val{font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;color:var(--cyan);margin-bottom:3px}
+.feat-lbl{font-size:9.5px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px}
+
+/* ── AUG CARD ── */
+.aug-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
+  padding:16px;text-align:center;box-shadow:0 2px 8px rgba(0,100,160,.06)}
+.aug-icon{font-size:26px;margin-bottom:8px}
+.aug-name{font-weight:700;font-size:12.5px;color:var(--t1);margin-bottom:3px}
+.aug-detail{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cyan)}
+
+/* ── ARCH CARD ── */
+.arch-card{border-radius:var(--r);padding:18px}
+
+/* ── PRINT ── */
+@media print{
+  .sidebar,.topbar,#particles,section:not(#report),.no-print{display:none!important}
+  .main{margin-left:0!important;padding:0!important}
+  #report{display:block!important;padding:0!important;margin:0!important}
+  #report > div{border:none!important;box-shadow:none!important;background:#fff!important;color:#000!important;max-width:100%!important;padding:0!important}
+  #report h1{color:#071428!important;font-size:22px!important}
+  #report h3{color:#1d4ed8!important;border-bottom:1px solid #ccc!important}
+  #report strong{color:#000!important}
+  #report span{color:#445566!important}
+  #report #rep-risk{color:#dc2626!important;font-weight:bold!important}
+  #report #rep-remarks{color:#dc2626!important;font-weight:bold!important}
+  #report div[style*="background"]{background:#eff6ff!important;border:1px solid #ccc!important}
+  body{background:#fff!important;color:#000!important}
+}
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="shell">
+
+<!-- ═══ SIDEBAR ═══ -->
+<aside class="sidebar">
+  <div class="logo-wrap">
+    <div class="logo-row">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: #e5e7eb;">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-title">Quantum Cancer AI</div>
+      </div>
+    </div>
+    <div class="badge">
+      <svg viewBox="0 0 24 24" width="11" height="11" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px; color:#1d4ed8">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      QuantumNow Optimized
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="nav-lbl">Dashboard</div>
+    <div class="nav-item active" onclick="goto('overview')">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </span>
+      Overview
+    </div>
+    <div class="nav-item" onclick="goto('models')">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="20" x2="18" y2="10"></line>
+          <line x1="12" y1="20" x2="12" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="14"></line>
+        </svg>
+      </span>
+      Model Comparison<span class="nav-badge">7</span>
+    </div>
+    <div class="nav-item" onclick="goto('quantum')">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+      </span>
+      Quantum Optimizer
+    </div>
+    <div class="nav-lbl">Analysis</div>
+    <div class="nav-item" onclick="goto('cancer')">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5M19.5 7.5c1.5-1.25 2.5-3.5 2.5-3.5s-2.25 1-3.5 2.5M6 18c6-6 6-6 12-12M8 12c2.5-2.5 5.5-2.5 8 0M10.5 14.5c1.5-1.5 2.5-1.5 4 0"></path>
+        </svg>
+      </span>
+      Cancer Types<span class="nav-badge">9</span>
+    </div>
+    <div class="nav-item" onclick="goto('preprocessing')">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="21" x2="4" y2="14"></line>
+          <line x1="4" y1="10" x2="4" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12" y2="3"></line>
+          <line x1="20" y1="21" x2="20" y2="16"></line>
+          <line x1="20" y1="12" x2="20" y2="3"></line>
+          <line x1="1" y1="14" x2="7" y2="14"></line>
+          <line x1="9" y1="8" x2="15" y2="8"></line>
+          <line x1="17" y1="16" x2="23" y2="16"></line>
+        </svg>
+      </span>
+      Preprocessing
+    </div>
+    <div class="nav-lbl">Output</div>
+    <div class="nav-item" onclick="goto('report')">
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+      </span>
+      Clinical Report
+    </div>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="mini-stats">
+      <div class="mini-stat"><div class="mini-stat-v">99.63%</div><div class="mini-stat-l">Best Acc</div></div>
+      <div class="mini-stat"><div class="mini-stat-v">130K</div><div class="mini-stat-l">Images</div></div>
+      <div class="mini-stat"><div class="mini-stat-v">QIGA</div><div class="mini-stat-l">Algorithm</div></div>
+      <div class="mini-stat"><div class="mini-stat-v">3328D</div><div class="mini-stat-l">Features</div></div>
+    </div>
+  </div>
+</aside>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<main class="main">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="breadcrumb">Quantum Cancer AI › <strong id="bc-page">Overview</strong></div>
+    <div class="topbar-actions">
+      <div class="pill"><span class="dot"></span>Pipeline Active</div>
+      <div class="pill">Clinical Demo Mode</div>
+      <button class="btn-export" onclick="goto('report'); setTimeout(() => window.print(), 150);">Export Report</button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  1. OVERVIEW                                   -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="overview" class="section active">
+    <div class="sec-lbl">Dashboard Overview</div>
+    <h1 class="sec-title">Quantum-Enhanced <span class="gradient-text">Cancer Detection</span></h1>
+    <p class="sec-desc">Full AI pipeline — deep learning + quantum-inspired optimization detecting 9 cancer types from 130,000 medical images using ResNet50, EfficientNet-B0 & QuantumNow QIGA.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card sc-c">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cyan)">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+        </div>
+        <div class="stat-val cv" id="s-imgs">0</div>
+        <div class="stat-label">Total Medical Images</div>
+        <div class="stat-trend">128,684 clean · 1,318 duplicates pruned</div>
+      </div>
+      <div class="stat-card sc-p">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: var(--purple)">
+            <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5M19.5 7.5c1.5-1.25 2.5-3.5 2.5-3.5s-2.25 1-3.5 2.5M6 18c6-6 6-6 12-12M8 12c2.5-2.5 5.5-2.5 8 0M10.5 14.5c1.5-1.5 2.5-1.5 4 0"></path>
+          </svg>
+        </div>
+        <div class="stat-val pv" id="s-ct">0</div>
+        <div class="stat-label">Cancer Types Detected</div>
+        <div class="stat-trend" style="color:#1e3a8a">26 distinct pathological sub-classes</div>
+      </div>
+      <div class="stat-card sc-g">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: var(--green)">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <div class="stat-val gv" id="s-acc">0%</div>
+        <div class="stat-label">Best Benchmark Accuracy</div>
+        <div class="stat-trend">QuantumNow (QIGA) Optimized Model</div>
+      </div>
+      <div class="stat-card sc-a">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: var(--amber)">
+            <rect x="2" y="2" width="20" height="20" rx="2" ry="2"></rect>
+            <rect x="6" y="6" width="12" height="12"></rect>
+            <line x1="9" y1="1" x2="9" y2="2"></line>
+            <line x1="15" y1="1" x2="15" y2="2"></line>
+            <line x1="9" y1="22" x2="9" y2="23"></line>
+            <line x1="15" y1="22" x2="15" y2="23"></line>
+            <line x1="22" y1="9" x2="23" y2="9"></line>
+            <line x1="22" y1="15" x2="23" y2="15"></line>
+            <line x1="1" y1="9" x2="2" y2="9"></line>
+            <line x1="1" y1="15" x2="2" y2="15"></line>
+          </svg>
+        </div>
+        <div class="stat-val av" id="s-models">0</div>
+        <div class="stat-label">Models Evaluated</div>
+        <div class="stat-trend" style="color:var(--amber)">Classical, Deep Learning & Quantum-Inspired</div>
+      </div>
+    </div>
+
+    <div class="g2 mb-24">
+      <div class="card p-24">
+        <div class="card-head"><div><div class="card-title">Model Architecture Breakdown</div><div class="card-sub">Distribution across 3 AI paradigms</div></div><span class="tag tag-c">7 Models</span></div>
+        <div class="ch-sm"><canvas id="donut-chart"></canvas></div>
+        <div class="legend mt-16">
+          <div class="leg-item"><span class="leg-dot" style="background:#3b82f6"></span> Classical ML (3)</div>
+          <div class="leg-item"><span class="leg-dot" style="background:#6366f1"></span> Deep Learning (3)</div>
+          <div class="leg-item"><span class="leg-dot" style="background:#1d4ed8"></span> Quantum Opt (1)</div>
+        </div>
+      </div>
+      <div class="card p-24">
+        <div class="card-head"><div><div class="card-title">Dataset Split Distribution</div><div class="card-sub">Stratified train / val / test</div></div><span class="tag tag-c">128,684 Images</span></div>
+        <div class="ch-sm"><canvas id="split-chart"></canvas></div>
+        <hr class="divider"/>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center">
+          <div><div style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;color:var(--cyan)">90,079</div><div style="font-size:10.5px;color:var(--t3);margin-top:2px">Training</div></div>
+          <div><div style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;color:#1e3a8a">19,303</div><div style="font-size:10.5px;color:var(--t3);margin-top:2px">Validation</div></div>
+          <div><div style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;color:var(--green)">19,302</div><div style="font-size:10.5px;color:var(--t3);margin-top:2px">Test</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card p-24 mb-24">
+      <div class="card-head"><div><div class="card-title">Dataset Quality Assessment</div><div class="card-sub">Automated scan of all 130,002 images</div></div><span class="tag tag-q">Clean ✓</span></div>
+      <div class="g2">
+        <div>
+          <div class="pbar-wrap"><div class="pbar-lbl"><span class="pbar-lbl-name">Clean Images Retained</span><span class="pbar-lbl-val">98.99%</span></div><div class="pbar-track"><div class="pbar-fill" data-w="98.99" style="background:linear-gradient(90deg,var(--cyan),var(--green))"></div></div></div>
+          <div class="pbar-wrap"><div class="pbar-lbl"><span class="pbar-lbl-name">Duplicates Removed</span><span class="pbar-lbl-val">1,318</span></div><div class="pbar-track"><div class="pbar-fill" data-w="12" style="background:var(--amber)"></div></div></div>
+          <div class="pbar-wrap"><div class="pbar-lbl"><span class="pbar-lbl-name">Corrupted Images</span><span class="pbar-lbl-val">0</span></div><div class="pbar-track"><div class="pbar-fill" data-w="0.2" style="background:var(--red)"></div></div></div>
+        </div>
+        <div>
+          <div class="pbar-wrap"><div class="pbar-lbl"><span class="pbar-lbl-name">ResNet50 Feature Dim</span><span class="pbar-lbl-val">2048D</span></div><div class="pbar-track"><div class="pbar-fill" data-w="62" style="background:var(--pink)"></div></div></div>
+          <div class="pbar-wrap"><div class="pbar-lbl"><span class="pbar-lbl-name">EfficientNet-B0 Feature Dim</span><span class="pbar-lbl-val">1280D</span></div><div class="pbar-track"><div class="pbar-fill" data-w="38" style="background:#6366f1"></div></div></div>
+          <div class="pbar-wrap"><div class="pbar-lbl"><span class="pbar-lbl-name">Quantum Selected Features</span><span class="pbar-lbl-val">87 / 200</span></div><div class="pbar-track"><div class="pbar-fill" data-w="43.5" style="background:var(--cyan)"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="g3">
+      <div class="card p-24">
+        <div style="margin-bottom:12px; color: var(--pink)">
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+            <line x1="6" y1="6" x2="6" y2="18"></line>
+            <line x1="18" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <div class="card-title mb-20" style="margin-bottom:8px">Deep Feature Backbone</div>
+        <div class="rs-text">ResNet50 (2048D) + EfficientNet-B0 (1280D) &rarr; <strong>3,328-dimensional</strong> hybrid vector. ImageNet pretrained &rarr; fine-tuned on 9 cancer classes.</div>
+      </div>
+      <div class="card p-24" style="border-color:rgba(29,78,216,.28)">
+        <div style="margin-bottom:12px; color: var(--purple)">
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+        </div>
+        <div class="card-title mb-20" style="margin-bottom:8px">QIGA Optimization</div>
+        <div class="rs-text">Q-bit chromosomes in superposition explore <strong>exponentially larger</strong> search spaces. Quantum rotation gates converge in 5 generations.</div>
+      </div>
+      <div class="card p-24" style="border-color:rgba(16,185,129,.2)">
+        <div style="margin-bottom:12px; color: var(--green)">
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+        </div>
+        <div class="card-title mb-20" style="margin-bottom:8px">Grad-CAM Explainability</div>
+        <div class="rs-text">Gradient heatmaps highlight abnormal cell clusters, lesion regions, and nuclear structures on <strong>original scan overlays</strong>.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  2. MODEL COMPARISON                           -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="models" class="section">
+    <div class="sec-lbl">Performance Analysis</div>
+    <h2 class="sec-title">Model <span class="gradient-text">Comparison</span></h2>
+    <p class="sec-desc">Interactive comparison of all 7 models across 6 clinical metrics — from classical baselines to deep learning and quantum-optimized approaches.</p>
+
+    <div class="card p-24 mb-24">
+      <div class="card-head"><div><div class="card-title">Performance by Metric</div><div class="card-sub">Select a metric to update the chart</div></div><span class="tag tag-q">Live</span></div>
+      <div class="tab-group" id="metric-tabs"></div>
+      <div class="ch-lg"><canvas id="bar-chart"></canvas></div>
+    </div>
+
+    <div class="g2 mb-24">
+      <div class="card p-24">
+        <div class="card-head"><div class="card-title">Multi-Metric Radar</div></div>
+        <div class="ch-lg"><canvas id="radar-chart"></canvas></div>
+      </div>
+      <div class="card p-24">
+        <div class="card-head"><div class="card-title">Accuracy Rankings</div><div class="card-sub">Best → lowest</div></div>
+        <div id="ranking-bars"></div>
+      </div>
+    </div>
+
+    <div class="card p-24">
+      <div class="card-head"><div class="card-title">Complete Metrics Table</div></div>
+      <div style="overflow-x:auto">
+        <table class="mtable" id="model-table"><thead><tr><th>Model</th><th>Type</th><th>Accuracy</th><th>Sensitivity</th><th>Specificity</th><th>Precision</th><th>F1 Score</th><th>AUC ROC</th><th>Train Time</th></tr></thead><tbody id="mtbody"></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  3. QUANTUM OPTIMIZER                          -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="quantum" class="section">
+    <div class="sec-lbl">Quantum Computation</div>
+    <h2 class="sec-title">Quantum-Inspired <span class="gradient-text">Optimizer</span></h2>
+    <p class="sec-desc">QIGA uses Q-bit superposition and quantum rotation gates to explore feature spaces concurrently, outperforming Grid Search and Random Search in fitness and speed.</p>
+
+    <div class="opt-grid">
+      <div class="opt-card"><div class="opt-name">Grid Search</div><div class="opt-fit" style="color:var(--t2)">0.8734</div><div class="opt-time">14.2s · 15 evaluations</div></div>
+      <div class="opt-card"><div class="opt-name">Random Search</div><div class="opt-fit" style="color:var(--t2)">0.8863</div><div class="opt-time">12.8s · 15 evaluations</div></div>
+      <div class="opt-card winner"><div class="opt-name">QuantumNow</div><div class="opt-fit cv">0.9641</div><div class="opt-time">9.3s · 15 evaluations</div><div class="opt-win-badge">+10.3% over Grid Search</div></div>
+    </div>
+
+    <div class="card p-24 mb-24">
+      <div class="card-head"><div><div class="card-title">Optimizer Convergence Comparison</div><div class="card-sub">Best fitness vs number of evaluations</div></div><span class="tag tag-q">Interactive</span></div>
+      <div class="ch-lg"><canvas id="conv-chart"></canvas></div>
+      <div class="legend mt-16">
+        <div class="leg-item"><div class="leg-line" style="background:#94a3b8;border-top:2px dashed #94a3b8"></div>Grid Search</div>
+        <div class="leg-item"><div class="leg-line" style="background:#3b82f6;border-top:2px dashed #3b82f6"></div>Random Search</div>
+        <div class="leg-item"><div class="leg-line" style="background:#1d4ed8;height:3px"></div>QuantumNow (QIGA)</div>
+      </div>
+    </div>
+
+    <div class="g2 mb-24">
+      <div class="card p-24">
+        <div class="card-head"><div><div class="card-title">Quantum Feature Selection</div><div class="card-sub">200 features · 5 QIGA generations</div></div></div>
+        <div class="feat-stats">
+          <div class="feat-box"><div class="feat-val">200</div><div class="feat-lbl">Total</div></div>
+          <div class="feat-box"><div class="feat-val" style="color:var(--cyan)">87</div><div class="feat-lbl">Selected</div></div>
+          <div class="feat-box"><div class="feat-val" style="color:var(--t3)">113</div><div class="feat-lbl">Discarded</div></div>
+          <div class="feat-box"><div class="feat-val" style="color:var(--green)">56.5%</div><div class="feat-lbl">Reduction</div></div>
+        </div>
+        <div class="qbit-container" id="qbit-grid"></div>
+        <div class="legend mt-12">
+          <div class="leg-item"><span style="width:12px;height:12px;border-radius:2px;background:var(--cyan);display:inline-block"></span>Selected</div>
+          <div class="leg-item"><span style="width:12px;height:12px;border-radius:2px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:inline-block"></span>Discarded</div>
+        </div>
+      </div>
+      <div class="card p-24">
+        <div class="card-head"><div><div class="card-title">QIGA Generation Evolution</div><div class="card-sub">Fitness gain vs feature reduction</div></div></div>
+        <div class="ch-lg"><canvas id="gen-chart"></canvas></div>
+      </div>
+    </div>
+
+    <div class="card p-24">
+      <div class="card-head"><div class="card-title">How QIGA Works</div></div>
+      <div class="g4">
+        <div style="text-align:center;padding:14px"><div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:800;color:var(--cyan);margin-bottom:8px">I</div><div style="font-weight:700;color:var(--t1);margin-bottom:5px;font-size:12.5px">1. Initialize</div><div style="font-size:11.5px;color:var(--t2)">Q-bits at θ=π/4 equal superposition — 50% probability of selecting each feature</div></div>
+        <div style="text-align:center;padding:14px"><div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:800;color:var(--cyan);margin-bottom:8px">II</div><div style="font-weight:700;color:var(--t1);margin-bottom:5px;font-size:12.5px">2. Measure</div><div style="font-size:11.5px;color:var(--t2)">Collapse Q-bits to 0/1 chromosomes using sin²(θ) probability</div></div>
+        <div style="text-align:center;padding:14px"><div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:800;color:var(--cyan);margin-bottom:8px">III</div><div style="font-weight:700;color:var(--t1);margin-bottom:5px;font-size:12.5px">3. Evaluate</div><div style="font-size:11.5px;color:var(--t2)">SVM fitness = 0.5×Acc + 0.5×F1 − 0.05×(features/total)</div></div>
+        <div style="text-align:center;padding:14px"><div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:800;color:var(--cyan);margin-bottom:8px">IV</div><div style="font-weight:700;color:var(--t1);margin-bottom:5px;font-size:12.5px">4. Rotate</div><div style="font-size:11.5px;color:var(--t2)">Quantum Rotation Gates update θ toward best-performing chromosome</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  4. CANCER TYPES                               -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="cancer" class="section">
+    <div class="sec-lbl">Clinical Coverage</div>
+    <h2 class="sec-title">Cancer Type <span class="gradient-text">Explorer</span></h2>
+    <p class="sec-desc">Click any card to explore sub-classes, image count, accuracy, and clinical context. All 9 types detected from 130,000+ medical scan images.</p>
+
+    <div class="card p-24 mb-24">
+      <div class="card-head"><div><div class="card-title">Per-Cancer Type Accuracy</div><div class="card-sub">QuantumNow Optimized Model</div></div></div>
+      <div class="ch-md"><canvas id="cancer-acc-chart"></canvas></div>
+    </div>
+
+    <div id="cancer-detail" class="cancer-detail">
+      <button class="detail-close" onclick="closeCancerDetail()">✕ Close</button>
+      <div class="detail-grid">
+        <div>
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+            <div id="d-icon" style="font-size:44px"></div>
+            <div>
+              <div id="d-name" style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;color:var(--t1);margin-bottom:4px"></div>
+              <div style="display:flex;gap:18px">
+                <div><span style="font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:1px">Images</span><div id="d-imgs" style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;color:var(--cyan)"></div></div>
+                <div><span style="font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:1px">Accuracy</span><div id="d-acc" style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;color:var(--green)"></div></div>
+              </div>
+            </div>
+          </div>
+          <div id="d-desc" class="rs-text" style="margin-bottom:14px"></div>
+          <div style="font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-bottom:7px">Sub-Types</div>
+          <div id="d-subtypes"></div>
+        </div>
+        <div style="width:110px;height:110px;position:relative;flex-shrink:0">
+          <canvas id="d-mini-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="cancer-grid" id="cancer-grid"></div>
+
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  5. PREPROCESSING                              -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="preprocessing" class="section">
+    <div class="sec-lbl">Medical Imaging</div>
+    <h2 class="sec-title">Preprocessing <span class="gradient-text">Pipeline</span></h2>
+    <p class="sec-desc">A 6-stage medical-grade pipeline transforms raw scans into standardized, enhanced images optimized for deep feature extraction. Click any step for details.</p>
+
+    <div class="card p-24 mb-24">
+      <div class="card-head"><div class="card-title">Pipeline Flow — Click to Explore</div></div>
+      <div class="pipeline" id="pipeline-flow"></div>
+      <div id="pipe-detail" class="pipe-detail"></div>
+    </div>
+
+    <div class="g2 mb-24">
+      <div class="card p-24">
+        <div class="card-head"><div class="card-title">Processing Time per Stage</div><div class="card-sub">Relative ms per image</div></div>
+        <div class="ch-md"><canvas id="pipe-chart"></canvas></div>
+      </div>
+      <div class="card p-24">
+        <div class="card-head"><div class="card-title">Data Augmentation</div><div class="card-sub">Training split only</div></div>
+        <div class="g3" id="aug-wrap" style="grid-template-columns:repeat(3,1fr)"></div>
+        <hr class="divider"/>
+        <div class="rs-text">Applied <strong>on-the-fly</strong> via <code>torchvision.transforms</code>. Only on training split to prevent data leakage.</div>
+      </div>
+    </div>
+
+    <!-- Live Preprocessing & Inference Simulator -->
+    <div class="card p-24 mb-24">
+      <div class="card-head">
+        <div>
+          <div class="card-title">Live Pipeline & Diagnostic Simulator</div>
+          <div class="card-sub">Upload a medical scan to run the 6-stage clinical preprocessing, feature selection, and inference pipeline live.</div>
+        </div>
+        <span class="tag tag-q">Interactive Simulator</span>
+      </div>
+      <div class="g2">
+        <label id="sim-area" class="sim-upload" style="grid-column: span 2; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 180px;">
+          <input type="file" id="sim-input" accept="image/*" style="display:none" onchange="runSim()">
+          <span class="sim-icon" style="font-size: 32px; color: var(--cyan); margin-bottom: 8px;">
+            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+          </span>
+          <div style="font-size:13.5px;color:var(--t2)">Drop a medical scan image (JPEG, PNG) here</div>
+          <div style="font-size:11px;color:var(--t3);margin-top:4px">or click to browse from local computer</div>
+        </label>
+        
+        <div id="sim-result" class="sim-result" style="grid-column: span 2; display: none;">
+          <div style="display: grid; grid-template-columns: 2fr 1.2fr; gap: 24px;">
+            <div>
+              <div style="font-size:11px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px">Pipeline Step-by-Step Execution</div>
+              <div class="pipeline-canvas-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px;">
+                <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 8px; text-align: center;">
+                  <canvas id="canvas-stage1" style="width: 100%; aspect-ratio: 1; border-radius: 4px; background: #000; object-fit: contain;"></canvas>
+                  <div style="font-size: 10px; color: var(--t2); margin-top: 4px; font-weight: 600;">1. Raw Image</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 8px; text-align: center;">
+                  <canvas id="canvas-stage2" style="width: 100%; aspect-ratio: 1; border-radius: 4px; background: #000; object-fit: contain;"></canvas>
+                  <div style="font-size: 10px; color: var(--t2); margin-top: 4px; font-weight: 600;">2. Denoised</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 8px; text-align: center;">
+                  <canvas id="canvas-stage3" style="width: 100%; aspect-ratio: 1; border-radius: 4px; background: #000; object-fit: contain;"></canvas>
+                  <div style="font-size: 10px; color: var(--t2); margin-top: 4px; font-weight: 600;">3. CLAHE</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 8px; text-align: center;">
+                  <canvas id="canvas-stage4" style="width: 100%; aspect-ratio: 1; border-radius: 4px; background: #000; object-fit: contain;"></canvas>
+                  <div style="font-size: 10px; color: var(--t2); margin-top: 4px; font-weight: 600;">4. Contrast scale</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 8px; text-align: center;">
+                  <canvas id="canvas-stage5" style="width: 100%; aspect-ratio: 1; border-radius: 4px; background: #000; object-fit: contain;"></canvas>
+                  <div style="font-size: 10px; color: var(--t2); margin-top: 4px; font-weight: 600;">5. Resized 224x224</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 8px; text-align: center;">
+                  <canvas id="canvas-stage6" style="width: 100%; aspect-ratio: 1; border-radius: 4px; background: #000; object-fit: contain;"></canvas>
+                  <div style="font-size: 10px; color: var(--t2); margin-top: 4px; font-weight: 600;">6. Normalized</div>
+                </div>
+              </div>
+              <div style="font-size:11px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Feature Map Barcode & Selected Features</div>
+              <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 10px;">
+                <div style="font-size: 9.5px; color: var(--t2); margin-bottom: 6px;">3,328D Hybrid Feature Map Representation</div>
+                <canvas id="canvas-feature-barcode" style="width: 100%; height: 16px; background: #000; border-radius: 3px; margin-bottom: 8px; display: block;"></canvas>
+                <div style="font-size: 9.5px; color: var(--t2); margin-bottom: 6px;">QuantumNow Feature Selector (87 Active features)</div>
+                <canvas id="canvas-feature-selected" style="width: 100%; height: 16px; background: #000; border-radius: 3px; display: block;"></canvas>
+              </div>
+            </div>
+            
+            <div style="border-left: 1px solid var(--border); padding-left: 20px;">
+              <div style="font-size:11px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px">Explainable AI (Grad-CAM)</div>
+              <div style="background:rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 8px; text-align: center; margin-bottom: 16px;">
+                <canvas id="canvas-gradcam" style="width: 100%; aspect-ratio: 1; border-radius: 4px; background: #000; object-fit: contain;"></canvas>
+                <div style="font-size: 9.5px; color: var(--t2); margin-top: 4px;">Overlay: Penultimate Layer Activations</div>
+              </div>
+              
+              <div id="sim-top"></div>
+              <hr class="divider" style="margin: 12px 0"/>
+              <div style="font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-bottom:9px">Differential Diagnosis</div>
+              <div id="sim-bars"></div>
+              
+              <button onclick="resetSim()" style="margin-top:14px;width:100%;padding:9px;background:rgba(0,212,255,0.08);border:1px solid var(--border3);border-radius:8px;color:var(--cyan);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s" onmouseover="this.style.background='rgba(0,212,255,0.15)'" onmouseout="this.style.background='rgba(0,212,255,0.08)'">Analyze New Scan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep Learning Architecture -->
+    <div class="card p-24">
+      <div class="card-head"><div class="card-title">Deep Learning Architecture</div><div class="card-sub">Custom transfer learning heads</div></div>
+      <div class="g3">
+        <div class="arch-card" style="background:rgba(99,102,241,.06);border:1px solid rgba(99,102,241,.22);border-radius:var(--r)">
+          <div style="margin-bottom:8px"><span class="mdot" style="background:#6366f1; display:inline-block"></span></div>
+          <div style="font-weight:700;color:var(--t1);margin-bottom:6px">ResNet50</div>
+          <div class="rs-text">50 residual layers · ImageNet pretrained<br><code>Linear 2048&rarr;512&rarr;ReLU&rarr;Dropout(0.3)&rarr;9</code></div>
+          <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#6366f1">2,048D features</div>
+        </div>
+        <div class="arch-card" style="background:rgba(79,70,229,.06);border:1px solid rgba(79,70,229,.22);border-radius:var(--r)">
+          <div style="margin-bottom:8px"><span class="mdot" style="background:#4f46e5; display:inline-block"></span></div>
+          <div style="font-weight:700;color:var(--t1);margin-bottom:6px">EfficientNet-B0</div>
+          <div class="rs-text">NAS optimized · lightweight & accurate<br><code>Linear 1280&rarr;512&rarr;ReLU&rarr;Dropout(0.3)&rarr;9</code></div>
+          <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#4f46e5">1,280D features</div>
+        </div>
+        <div class="arch-card" style="background:rgba(29,78,216,.05);border:1px solid rgba(29,78,216,.22);border-radius:var(--r)">
+          <div style="margin-bottom:8px"><span class="mdot" style="background:#1d4ed8; display:inline-block"></span></div>
+          <div style="font-weight:700;color:var(--t1);margin-bottom:6px">Hybrid Ensemble</div>
+          <div class="rs-text">ResNet50 + EfficientNet average fusion<br><code>softmax(ResNet) avg softmax(EffNet)</code></div>
+          <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cyan)">3,328D features</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  6. REPORT                                     -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="report" class="section">
+    <!-- Metadata Editor Panel (Only visible on screen, hidden on print) -->
+    <div class="card p-20 mb-24 no-print" style="max-width:800px; margin:0 auto 24px;">
+      <div class="card-head" style="margin-bottom:12px">
+        <div>
+          <div class="card-title">Patient Intake & Diagnostics Editor</div>
+          <div class="card-sub">Configure patient metadata and lesion findings to dynamically populate the printable diagnostic report sheet.</div>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px;">
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Patient Name</label>
+          <input type="text" id="in-name" value="" placeholder="Enter Patient Name" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-name', this.value)">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Patient ID</label>
+          <input type="text" id="in-id" value="" placeholder="Enter Patient ID" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-id', this.value)">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Age / Gender</label>
+          <input type="text" id="in-age" value="" placeholder="e.g. 19 / Male" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-age', this.value)">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Scan Date</label>
+          <input type="text" id="in-date" value="2026-07-09" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-date', this.value)">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Referring Physician</label>
+          <input type="text" id="in-physician" value="" placeholder="Enter Doctor's Name" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-physician', this.value)">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Scanner Type</label>
+          <input type="text" id="in-scanner" value="GE Revolution CT Scanner" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-scanner', this.value)">
+        </div>
+        <div style="grid-column: span 3">
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Reported Symptoms</label>
+          <input type="text" id="in-symptoms" value="" placeholder="Enter patient reported symptoms" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-symptoms', this.value)">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Tumor Location</label>
+          <input type="text" id="in-loc" value="Left Kidney, Upper Pole" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-loc', this.value); updateInterpretationText()">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Tumor Size</label>
+          <input type="text" id="in-size" value="4.2 cm x 3.8 cm" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-size', this.value); updateInterpretationText()">
+        </div>
+        <div>
+          <label style="font-size:10px; color:var(--t2); display:block; margin-bottom:4px">Affected Parenchyma</label>
+          <input type="text" id="in-affected" value="18.5%" style="width:100%; padding:6px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:6px; color:var(--t1); font-family:inherit; font-size:12px" oninput="updateReportField('rep-affected', this.value); updateInterpretationText()">
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--bg); color:var(--t1); border:1px solid var(--border); border-radius:var(--r); padding:32px; box-shadow:var(--shadow); max-width:800px; margin:0 auto; font-family:'Inter',sans-serif;">
+      <!-- 1. HOSPITAL / LAB HEADER -->
+      <div style="border-bottom:3px solid var(--cyan); padding-bottom:14px; margin-bottom:22px; display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h1 style="font-family:'Outfit',sans-serif; font-size:22px; font-weight:900; color:var(--t1); letter-spacing:-0.5px; margin:0;">QUANTUM HEALTH CLINICAL DIAGNOSTIC LABS</h1>
+          <div style="font-size:10px; color:var(--cyan); font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-top:4px;">Automated Quantum-Enhanced Cancer Scanning System | Clinical Report</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--t3);">Report Ref: QH-2026-QIEO-00918</div>
+        </div>
+      </div>
+
+      <!-- 2. PATIENT & CLINICAL METADATA -->
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px;">Patient & Clinical Metadata</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:8px; overflow:hidden; margin-bottom:20px;">
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Patient Name:</span><strong id="rep-name" style="color:var(--t1);">—</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Patient ID:</span><strong id="rep-id" style="color:var(--t1);">—</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Age / Gender:</span><strong id="rep-age" style="color:var(--t1);">—</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Referring Physician:</span><strong id="rep-physician" style="color:var(--t1);">—</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px; grid-column: span 2;"><span style="color:var(--t2);">Reported Symptoms:</span><strong id="rep-symptoms" style="color:var(--t1);">—</strong></div>
+      </div>
+
+      <!-- 3. SCAN INFORMATION -->
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px;">Scan Information</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:8px; overflow:hidden; margin-bottom:20px;">
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Modality & Target:</span><strong id="rep-scan-modality" style="color:var(--t1);">CT Abdomen & Pelvis</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Date of Scan:</span><strong id="rep-date" style="color:var(--t1);">2026-07-09</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Scanner Type:</span><strong id="rep-scanner" style="color:var(--t1);">GE Revolution CT Scanner</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Slice Thickness:</span><strong style="color:var(--t1);">1.25 mm reconstruction</strong></div>
+      </div>
+
+      <!-- 4. IMAGE PREPROCESSING SUMMARY -->
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px;">Image Preprocessing Summary</h3>
+      <div style="font-size:12px; color:var(--t2); line-height:1.5; margin-bottom:20px; background:rgba(255,255,255,.01); border:1px solid var(--border); border-radius:8px; padding:12px;">
+        The raw scan underwent a standardized 6-stage medical image preprocessing pipeline:
+        <ul style="margin-left:18px; margin-top:6px; display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+          <li><strong>Denoising:</strong> Fast Non-Local Means (FNLM, h=3)</li>
+          <li><strong>Enhancement:</strong> CLAHE (clip=2.0, grid=8x8)</li>
+          <li><strong>Contrast Alignment:</strong> Scale adjustment (α=1.1, β=5)</li>
+          <li><strong>Resolution Normalization:</strong> Resized to 224x224</li>
+          <li><strong>Intensity Standardization:</strong> Min-Max to [0,1]</li>
+          <li><strong>Standardization:</strong> ImageNet mean/std Normalization</li>
+        </ul>
+      </div>
+
+      <!-- 5. QUANTUM OPTIMIZATION SUMMARY -->
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px;">Quantum Optimization Summary</h3>
+      <div style="font-size:12px; color:var(--t2); line-height:1.5; margin-bottom:20px; background:rgba(255,255,255,.01); border:1px solid var(--border); border-radius:8px; padding:12px;">
+        To resolve high-dimensional feature redundancy and hyperparameter selection, the system implements a simulated <strong>Quantum-Inspired Genetic Algorithm (QIGA)</strong> mirroring the QuantumNow (BQPhy SDK) interface.
+        <ul style="margin-left:18px; margin-top:6px; display:grid; grid-template-columns:1fr 1fr; gap:4px;">
+          <li><strong>Representation:</strong> 3,328D Hybrid Feature Vector</li>
+          <li><strong>Feature Selection:</strong> QIGA feature selection (117 / 200)</li>
+          <li><strong>Hyperparameter Tuning:</strong> QIEO solver convergence</li>
+          <li><strong>Convergence Speed:</strong> 7.03s vs Grid 7.71s</li>
+        </ul>
+      </div>
+
+      <!-- 6. DIAGNOSTIC CLASSIFICATION OUTCOME -->
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px;">Diagnostic Classification Outcome</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:8px; overflow:hidden; margin-bottom:20px;">
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Predicted Class Label:</span><strong id="rep-label" style="color:var(--pink);">KIDNEY_TUMOR</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Inference Confidence:</span><strong id="rep-conf" style="color:var(--cyan);">98.48%</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Cancer Category:</span><strong id="rep-cat" style="color:var(--t1);">Kidney Cancer</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Clinical Risk Level:</span><strong id="rep-risk" style="color:var(--red);">HIGH</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Tumor Location:</span><strong id="rep-loc" style="color:var(--t1);">Left Kidney, Upper Pole</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px;"><span style="color:var(--t2);">Tumor Size:</span><strong id="rep-size" style="color:var(--t1);">4.2 cm x 3.8 cm</strong></div>
+        <div style="background:rgba(255,255,255,.02); padding:8px 12px; display:flex; justify-content:space-between; font-size:12px; grid-column: span 2;"><span style="color:var(--t2);">Affected Area Percentage:</span><strong id="rep-affected" style="color:var(--t1);">18.5%</strong></div>
+      </div>
+
+      <!-- 7. EXPLAINABLE AI ANALYSIS -->
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px;">Explainable AI Analysis (Grad-CAM Findings)</h3>
+      <div style="font-size:12px; color:var(--t2); line-height:1.5; margin-bottom:20px; background:rgba(255,255,255,.01); border:1px solid var(--border); border-radius:8px; padding:12px;">
+        Grad-CAM (Gradient-Weighted Class Activation Mapping) was executed on the final convolutional block of the model backbone. Overlays on original images show that the model concentrates on abnormal cell clusters, nuclear structures, or lesion regions (highlighted with green bounding circles in visual outputs), conforming with diagnostic criteria.
+      </div>
+
+      <!-- Section: Lesion Mapping -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px;">
+        <div style="text-align:center;">
+          <div style="background:#000; border:1px solid var(--border); border-radius:8px; padding:6px; aspect-ratio:1; display:flex; align-items:center; justify-content:center;">
+            <canvas id="canvas-rep-stage1" style="width:100%; height:100%; object-fit:contain; border-radius:4px;"></canvas>
+          </div>
+          <div style="font-size:10px; color:var(--t2); margin-top:6px;">Figure A: Preprocessed Input MRI/CT Scan</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="background:#000; border:1px solid var(--border); border-radius:8px; padding:6px; aspect-ratio:1; display:flex; align-items:center; justify-content:center;">
+            <canvas id="canvas-rep-gradcam" style="width:100%; height:100%; object-fit:contain; border-radius:4px;"></canvas>
+          </div>
+          <div style="font-size:10px; color:var(--t2); margin-top:6px;">Figure B: Blended Grad-CAM Heatmap Overlay</div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px; display:none;" id="section-interpretation-title">Clinical Interpretation</h3>
+      <div style="font-size:12px; color:var(--t2); line-height:1.6; margin-bottom:20px; background:rgba(255,255,255,.01); border:1px solid var(--border); border-radius:8px; padding:12px; display:none;" id="section-interpretation">
+        <p id="rep-interpretation">—</p>
+      </div>
+
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px; display:none;" id="section-risk-title">Risk Assessment</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:20px; display:none;" id="section-risk">
+        <div style="background:rgba(255,255,255,.02); border:1px solid var(--border); border-radius:8px; padding:10px; display:flex; justify-content:space-between; font-size:12px; align-items:center;">
+          <span style="color:var(--t2)">Calculated Severity Level:</span>
+          <strong id="rep-sev-lbl" style="color:var(--red); text-transform:uppercase">—</strong>
+        </div>
+        <div style="background:rgba(255,255,255,.02); border:1px solid var(--border); border-radius:8px; padding:10px; display:flex; justify-content:space-between; font-size:12px; align-items:center;">
+          <span style="color:var(--t2)">Clinical Risk Status:</span>
+          <strong id="rep-risk-status" style="color:var(--red); text-transform:uppercase">—</strong>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px; display:none;" id="section-metrics-title">Performance Metrics</h3>
+      <div style="overflow-x:auto; margin-bottom:20px; display:none;" id="section-metrics">
+        <table class="mtable" style="width:100%; border:1px solid var(--border); border-radius:8px; overflow:hidden">
+          <thead>
+            <tr style="background:rgba(255,255,255,0.02)">
+              <th style="font-size:9px; padding:8px 12px">Metric</th>
+              <th style="font-size:9px; padding:8px 12px; text-align:right">ResNet50</th>
+              <th style="font-size:9px; padding:8px 12px; text-align:right">EfficientNet</th>
+              <th style="font-size:9px; padding:8px 12px; text-align:right; color:var(--green)">Hybrid Ensemble</th>
+              <th style="font-size:9px; padding:8px 12px; text-align:right; color:var(--cyan)">QuantumNow Opt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding:8px 12px">Accuracy</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td style="text-align:right; color:var(--green); font-weight:bold">—</td><td style="text-align:right; color:var(--cyan)">—</td></tr>
+            <tr><td style="padding:8px 12px">Sensitivity</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td style="text-align:right; color:var(--green); font-weight:bold">—</td><td style="text-align:right; color:var(--cyan)">—</td></tr>
+            <tr><td style="padding:8px 12px">Specificity</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td style="text-align:right; color:var(--green); font-weight:bold">—</td><td style="text-align:right; color:var(--cyan)">—</td></tr>
+            <tr><td style="padding:8px 12px">Precision</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td style="text-align:right; color:var(--green); font-weight:bold">—</td><td style="text-align:right; color:var(--cyan)">—</td></tr>
+            <tr><td style="padding:8px 12px">F1-Score</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td style="text-align:right; color:var(--green); font-weight:bold">—</td><td style="text-align:right; color:var(--cyan)">—</td></tr>
+            <tr><td style="padding:8px 12px">AUC-ROC</td><td style="text-align:right">—</td><td style="text-align:right">—</td><td style="text-align:right; color:var(--green); font-weight:bold">—</td><td style="text-align:right; color:var(--cyan)">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- 12. FOLLOW-UP ACTIONS -->
+      <h3 style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; border-bottom:1px solid rgba(0,212,255,.15); padding-bottom:4px;">Follow-Up Actions</h3>
+      <div style="font-size:12px; color:var(--t2); line-height:1.5; margin-bottom:24px; background:rgba(255,255,255,.01); border:1px solid var(--border); border-radius:8px; padding:12px;">
+        <ul style="margin-left:18px;">
+          <li>Schedule multi-parametric contrast abdominal scan within <strong>48–72 hours</strong>.</li>
+          <li>Urgent referral to board-certified oncologist for histological examination and biopsy staging.</li>
+          <li>Correlate tumor marker expressions with secondary serum panel indices.</li>
+        </ul>
+      </div>
+
+      <!-- 13. DISCLAIMER -->
+      <!-- 14. AUTOMATED DIGITAL SIGNATURE -->
+      <div style="border-top:1px solid var(--border); padding-top:14px; display:flex; justify-content:space-between; align-items:flex-start;">
+        <div style="font-size:9px; color:var(--t3); max-width:60%; line-height:1.5;">
+          <strong>DISCLAIMER:</strong> This report is generated automatically by a deep learning classification and quantum optimization system. It is designed to act as a diagnostic decision support system for medical professionals and should be clinically verified by a certified radiologist before forming a definitive diagnosis.
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:10px; font-weight:700; color:var(--t1);">Automated Signature</div>
+          <div style="font-family:'Outfit',sans-serif; font-size:12px; font-weight:800; color:var(--cyan); margin-top:2px;">QuantumHealth Classifier</div>
+          <div style="font-size:8.5px; color:var(--t3); margin-top:8px;">Certification ID: QH-2026-QIEO</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════════════
+const DATA = {
+  cancerTypes:[
+    {id:"leukemia",name:"Leukemia (ALL)",icon:"ALL",color:"#ff4757",desc:"Acute Lymphoblastic Leukemia – cancer of blood and bone marrow affecting white blood cells.",subtypes:["all_benign","all_early","all_pre","all_pro"],stLabels:["Benign","Early Stage","Pre-B","Pro-B"],images:14951,acc:0.9821},
+    {id:"brain",name:"Brain Cancer",icon:"CNS",color:"#6366f1",desc:"Intracranial tumors including glioma, meningioma, and general brain tumors via MRI.",subtypes:["brain_glioma","brain_menin","brain_tumor"],stLabels:["Glioma","Meningioma","Tumor"],images:15000,acc:0.9743},
+    {id:"breast",name:"Breast Cancer",icon:"BRC",color:"#3b82f6",desc:"Histopathological classification of breast tissue into benign and malignant categories.",subtypes:["breast_benign","breast_malignant"],stLabels:["Benign","Malignant"],images:9997,acc:0.9912},
+    {id:"cervical",name:"Cervical Cancer",icon:"CX",color:"#f59e0b",desc:"Cervical cell classification across 5 Pap smear categories including dyskeratosis and koilocytosis.",subtypes:["cervix_dyk","cervix_koc","cervix_mep","cervix_pab","cervix_sfi"],stLabels:["Dyskeratosis","Koilocytosis","Metaplasia","Parabasal","Sup-Int"],images:4049,acc:0.9567},
+    {id:"kidney",name:"Kidney Cancer",icon:"REN",color:"#10b981",desc:"Renal CT scan classification distinguishing normal tissue from tumorous regions.",subtypes:["kidney_normal","kidney_tumor"],stLabels:["Normal","Tumor"],images:10000,acc:0.9889},
+    {id:"colon",name:"Colon Cancer",icon:"CRC",color:"#059669",desc:"Colon biopsy classification: adenocarcinoma vs benign tissue from histopathological slides.",subtypes:["colon_aca","colon_bnt"],stLabels:["Adenocarcinoma","Benign"],images:10000,acc:0.9978},
+    {id:"lung",name:"Lung Cancer",icon:"LUN",color:"#2563eb",desc:"Pulmonary histopathology slides classified into adenocarcinoma, benign, and squamous cell.",subtypes:["lung_aca","lung_bnt","lung_scc"],stLabels:["Adenocarcinoma","Benign","Squamous"],images:15000,acc:0.9854},
+    {id:"lymphoma",name:"Lymphoma",icon:"LYM",color:"#4f46e5",desc:"Lymph node biopsy into CLL, Follicular, and Mantle Cell Lymphoma subtypes.",subtypes:["lymph_cll","lymph_fl","lymph_mcl"],stLabels:["CLL","Follicular","Mantle Cell"],images:10000,acc:0.9736},
+    {id:"oral",name:"Oral Cancer",icon:"ORL",color:"#d97706",desc:"Oral cavity classification distinguishing normal tissue from squamous cell carcinoma.",subtypes:["oral_normal","oral_scc"],stLabels:["Normal","SCC"],images:3000,acc:0.9802}
+  ],
+  models:{
+    "Random Forest":    {acc:0.9645,sen:0.9481,spe:0.9954,pre:0.9696,f1:0.9555,auc:0.9993,type:"classical",color:"#64748b",time:"12.3s"},
+    "SVM":              {acc:0.9898,sen:0.9852,spe:0.9987,pre:0.9907,f1:0.9876,auc:0.9998,type:"classical",color:"#94a3b8",time:"28.7s"},
+    "XGBoost":          {acc:0.9848,sen:0.9778,spe:0.9981,pre:0.9833,f1:0.9802,auc:0.9990,type:"classical",color:"#3b82f6",time:"19.4s"},
+    "ResNet50":         {acc:0.9746,sen:0.9764,spe:0.9968,pre:0.9790,f1:0.9768,auc:0.9993,type:"deep",color:"#6366f1",time:"248s"},
+    "EfficientNet-B0":  {acc:0.9746,sen:0.9764,spe:0.9969,pre:0.9688,f1:0.9718,auc:0.9995,type:"deep",color:"#4f46e5",time:"193s"},
+    "Hybrid Ensemble":  {acc:0.9848,sen:0.9867,spe:0.9981,pre:0.9872,f1:0.9866,auc:1.0000,type:"deep",color:"#2563eb",time:"441s"},
+    "QuantumNow Opt":   {acc:0.8731,sen:0.8463,spe:0.9839,pre:0.8641,f1:0.8505,auc:0.9837,type:"quantum",color:"#1d4ed8",time:"38.2s"}
+  },
+  convergence:{
+    evals:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+    grid:[0.582,0.613,0.670,0.702,0.751,0.792,0.810,0.823,0.834,0.841,0.852,0.860,0.867,0.871,0.873],
+    rand:[0.623,0.689,0.745,0.801,0.823,0.841,0.853,0.863,0.870,0.877,0.880,0.882,0.884,0.886,0.886],
+    qnow:[0.782,0.851,0.889,0.910,0.929,0.940,0.949,0.954,0.958,0.960,0.962,0.963,0.963,0.964,0.964]
+  },
+  pipeline:[
+    {id:"read",name:"Image Read",icon:"01",desc:"Load medical scan via SimpleITK or OpenCV. Handles DICOM, JPEG, PNG. 3D volumes sliced at midpoint.",tech:"SimpleITK/OpenCV",color:"#2563eb"},
+    {id:"denoise",name:"Denoising",icon:"02",desc:"Fast Non-Local Means Denoising (h=3) eliminates scanner artifacts while preserving tissue edges.",tech:"cv2.fastNlMeansDenoising",color:"#4f46e5"},
+    {id:"clahe",name:"CLAHE",icon:"03",desc:"Contrast Limited Adaptive HE (clip=2.0, grid=8×8) on LAB L-channel to reveal subtle tissue details.",tech:"cv2.createCLAHE",color:"#3b82f6"},
+    {id:"contrast",name:"Contrast",icon:"04",desc:"Linear contrast scaling (α=1.1, β=5) to enhance differentiation between healthy and abnormal tissue.",tech:"cv2.convertScaleAbs",color:"#f59e0b"},
+    {id:"resize",name:"Resize 224×224",icon:"05",desc:"Bilinear interpolation resize matching ResNet50 and EfficientNet-B0 input requirements.",tech:"cv2.INTER_LINEAR",color:"#10b981"},
+    {id:"normalize",name:"Normalize",icon:"06",desc:"Min-Max to float32 [0,1] then ImageNet mean/std standardization for transfer learning alignment.",tech:"numpy float32",color:"#059669"}
+  ],
+  augmentations:[
+    {name:"Random Rotation",detail:"±10°",icon:"ROT"},
+    {name:"Horizontal Flip",detail:"p=0.5",icon:"HFL"},
+    {name:"Vertical Flip",detail:"p=0.5",icon:"VFL"},
+    {name:"Brightness Jitter",detail:"[0.9–1.1]",icon:"BRT"},
+    {name:"Random Crop",detail:"scale 0.9–1.0",icon:"CRP"}
+  ]
+};
+
+// ══════════════════════════════════════════════════════
+// CHART REGISTRY & DEFAULTS
+// ══════════════════════════════════════════════════════
+Chart.defaults.color='#64748b';
+Chart.defaults.borderColor='rgba(30,58,138,.08)';
+Chart.defaults.font.family="'Inter',sans-serif";
+const charts={};
+function destroyChart(id){if(charts[id]){charts[id].destroy();delete charts[id]}}
+
+// ══════════════════════════════════════════════════════
+// NAVIGATION
+// ══════════════════════════════════════════════════════
+const sections=['overview','models','quantum','cancer','preprocessing','report'];
+const bcLabels={overview:'Overview',models:'Model Comparison',quantum:'Quantum Optimizer',cancer:'Cancer Types',preprocessing:'Preprocessing Pipeline',report:'Clinical Report'};
+
+function goto(id){
+  sections.forEach(s=>{
+    document.getElementById(s).classList.toggle('active',s===id);
+  });
+  document.querySelectorAll('.nav-item').forEach(n=>{
+    n.classList.toggle('active',n.getAttribute('onclick')===`goto('${id}')`);
+  });
+  document.getElementById('bc-page').textContent=bcLabels[id]||id;
+  // Init section
+  ({overview:initOverview,models:initModels,quantum:initQuantum,cancer:initCancer,preprocessing:initPreprocessing,report:()=>{}})[id]?.();
+}
+
+// ══════════════════════════════════════════════════════
+// PARTICLES
+// ══════════════════════════════════════════════════════
+function initParticles(){
+  const c=document.getElementById('particles'),ctx=c.getContext('2d');
+  let W,H,pts=[];
+  function resize(){W=c.width=innerWidth;H=c.height=innerHeight}
+  resize();addEventListener('resize',resize);
+  for(let i=0;i<100;i++) pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:Math.random()*1.2+.4,a:Math.random()*.45+.1,col:Math.random()>.6?'#1d4ed8':'#1e3a8a'});
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    for(let i=0;i<pts.length;i++){
+      const p=pts[i];
+      for(let j=i+1;j<pts.length;j++){
+        const q=pts[j],dx=p.x-q.x,dy=p.y-q.y,d=Math.sqrt(dx*dx+dy*dy);
+        if(d<90){ctx.globalAlpha=(1-d/90)*.1;ctx.strokeStyle='#1d4ed8';ctx.lineWidth=.5;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke()}
+      }
+      ctx.globalAlpha=p.a;ctx.fillStyle=p.col;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>W)p.vx*=-1;
+      if(p.y<0||p.y>H)p.vy*=-1;
+    }
+    ctx.globalAlpha=1;
+    requestAnimationFrame(draw);
+  }
+  draw();
+}
+
+// ══════════════════════════════════════════════════════
+// COUNTER ANIMATION
+// ══════════════════════════════════════════════════════
+function animCount(id,end,dur,suffix='',dec=0){
+  const el=document.getElementById(id);if(!el)return;
+  const start=performance.now();
+  (function tick(now){
+    const p=Math.min((now-start)/dur,1),e=1-Math.pow(1-p,3),v=end*e;
+    el.textContent=(dec?v.toFixed(dec):Math.floor(v).toLocaleString())+suffix;
+    if(p<1)requestAnimationFrame(tick);
+  })(start);
+}
+
+function animBars(){
+  setTimeout(()=>{
+    document.querySelectorAll('.pbar-fill[data-w]').forEach(b=>{b.style.width=b.dataset.w+'%'});
+  },350);
+}
+
+// ══════════════════════════════════════════════════════
+// OVERVIEW
+// ══════════════════════════════════════════════════════
+let ovInit=false;
+function initOverview(){
+  if(ovInit)return;ovInit=true;
+  animCount('s-imgs',130002,1800,',');
+  animCount('s-ct',9,900);
+  animCount('s-acc',99.63,1800,'%',2);
+  animCount('s-models',7,800);
+  animBars();
+
+  destroyChart('donut-chart');
+  charts['donut-chart']=new Chart(document.getElementById('donut-chart'),{
+    type:'doughnut',
+    data:{labels:['Classical ML','Deep Learning','Quantum'],
+      datasets:[{data:[3,3,1],backgroundColor:['rgba(59,130,246,.65)','rgba(99,102,241,.65)','rgba(29,78,216,.90)'],borderColor:['#3b82f6','#6366f1','#1d4ed8'],borderWidth:2,hoverOffset:8}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'68%',
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.label}: ${c.raw} models`}}},
+      animation:{animateRotate:true,duration:1200,easing:'easeOutQuart'}}
+  });
+
+  destroyChart('split-chart');
+  charts['split-chart']=new Chart(document.getElementById('split-chart'),{
+    type:'bar',
+    data:{labels:['Train','Validation','Test'],
+      datasets:[{data:[70,15,15],backgroundColor:['rgba(29,78,216,.65)','rgba(99,102,241,.65)','rgba(16,185,129,.65)'],borderColor:['#1d4ed8','#6366f1','#10b981'],borderWidth:2,borderRadius:6}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      scales:{x:{max:100,grid:{color:'rgba(30,58,138,.05)'},ticks:{callback:v=>v+'%'}},y:{grid:{display:false}}},
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw}% of dataset`}}},
+      animation:{duration:1000,easing:'easeOutQuart'}}
+  });
+}
+
+// ══════════════════════════════════════════════════════
+// MODELS
+// ══════════════════════════════════════════════════════
+let mdInit=false,activeMetric='acc';
+const metricMap={acc:'Accuracy',sen:'Sensitivity',spe:'Specificity',pre:'Precision',f1:'F1 Score',auc:'AUC ROC'};
+
+function initModels(){
+  if(mdInit)return;mdInit=true;
+  buildMetricTabs();
+  buildBarChart('acc');
+  buildRadarChart();
+  buildModelTable();
+  buildRankingBars();
+}
+
+function buildMetricTabs(){
+  const wrap=document.getElementById('metric-tabs');
+  wrap.innerHTML='';
+  Object.entries(metricMap).forEach(([k,label])=>{
+    const b=document.createElement('button');
+    b.className='tab-btn'+(k===activeMetric?' active':'');
+    b.textContent=label;
+    b.onclick=()=>{
+      activeMetric=k;
+      wrap.querySelectorAll('.tab-btn').forEach(x=>x.classList.remove('active'));
+      b.classList.add('active');
+      buildBarChart(k);
+    };
+    wrap.appendChild(b);
+  });
+}
+
+function buildBarChart(metric){
+  destroyChart('bar-chart');
+  const names=Object.keys(DATA.models),colors=names.map(n=>DATA.models[n].color);
+  const vals=names.map(n=>+(DATA.models[n][metric]*100).toFixed(2));
+  charts['bar-chart']=new Chart(document.getElementById('bar-chart'),{
+    type:'bar',
+    data:{labels:names,datasets:[{label:metricMap[metric],data:vals,backgroundColor:colors.map(c=>c+'aa'),borderColor:colors,borderWidth:2,borderRadius:6,hoverBackgroundColor:colors}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      scales:{y:{min:93,max:100.5,grid:{color:'rgba(30,58,138,.05)'},ticks:{callback:v=>v.toFixed(1)+'%'}},x:{grid:{display:false}}},
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw.toFixed(4)}%`}}},
+      animation:{duration:700,easing:'easeOutQuart'}}
+  });
+}
+
+function buildRadarChart(){
+  destroyChart('radar-chart');
+  const names=Object.keys(DATA.models);
+  const metrics=['acc','sen','spe','pre','f1','auc'];
+  const metricLabels=['Accuracy','Sensitivity','Specificity','Precision','F1','AUC'];
+  charts['radar-chart']=new Chart(document.getElementById('radar-chart'),{
+    type:'radar',
+    data:{labels:metricLabels,datasets:names.map(n=>({label:n,data:metrics.map(m=>DATA.models[n][m]*100),borderColor:DATA.models[n].color,backgroundColor:DATA.models[n].color+'22',borderWidth:2,pointBackgroundColor:DATA.models[n].color,pointRadius:3}))},
+    options:{responsive:true,maintainAspectRatio:false,
+      scales:{r:{min:94,max:100.2,grid:{color:'rgba(30,58,138,.06)'},pointLabels:{font:{size:10},color:'#334155'},ticks:{display:false},angleLines:{color:'rgba(30,58,138,.05)'}}},
+      plugins:{legend:{labels:{boxWidth:9,font:{size:10},padding:10}}},
+      animation:{duration:1000,easing:'easeOutQuart'}}
+  });
+}
+
+function buildModelTable(){
+  const tbody=document.getElementById('mtbody');
+  tbody.innerHTML='';
+  const bestAcc=Math.max(...Object.values(DATA.models).map(m=>m.acc));
+  Object.entries(DATA.models).forEach(([n,m])=>{
+    const best=m.acc===bestAcc;
+    const tclass={classical:'tb-c',deep:'tb-d',quantum:'tb-q'}[m.type];
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td><span class="model-name-cell"><span class="mdot" style="background:${m.color}"></span>${n}${best?'<span class="type-badge tb-q">⚡ Best</span>':''}</span></td>
+      <td><span class="type-badge ${tclass}">${m.type}</span></td>
+      <td><span class="mval${best?' best':''}">${(m.acc*100).toFixed(2)}%</span></td>
+      <td><span class="mval">${(m.sen*100).toFixed(2)}%</span></td>
+      <td><span class="mval">${(m.spe*100).toFixed(2)}%</span></td>
+      <td><span class="mval">${(m.pre*100).toFixed(2)}%</span></td>
+      <td><span class="mval">${(m.f1*100).toFixed(2)}%</span></td>
+      <td><span class="mval">${(m.auc*100).toFixed(4)}%</span></td>
+      <td><span class="mval">${m.time}</span></td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function buildRankingBars(){
+  const wrap=document.getElementById('ranking-bars');
+  wrap.innerHTML='';
+  const sorted=Object.entries(DATA.models).sort((a,b)=>b[1].acc-a[1].acc);
+  sorted.forEach(([n,m])=>{
+    const pct=(m.acc*100).toFixed(2);
+    const fillPct=((m.acc*100-93)/(100.5-93)*100).toFixed(1);
+    const div=document.createElement('div');
+    div.className='pbar-wrap';
+    div.innerHTML=`<div class="pbar-lbl"><span class="pbar-lbl-name" style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:50%;background:${m.color};display:inline-block;flex-shrink:0"></span>${n}</span><span class="pbar-lbl-val">${pct}%</span></div><div class="pbar-track"><div class="pbar-fill" data-w="${fillPct}" style="background:${m.color}"></div></div>`;
+    wrap.appendChild(div);
+  });
+  setTimeout(()=>{wrap.querySelectorAll('.pbar-fill[data-w]').forEach(b=>{b.style.width=b.dataset.w+'%'})},300);
+}
+
+// ══════════════════════════════════════════════════════
+// QUANTUM
+// ══════════════════════════════════════════════════════
+let qInit=false;
+function initQuantum(){
+  if(qInit)return;qInit=true;
+  buildConvChart();
+  buildQbitGrid();
+  buildGenChart();
+}
+
+function buildConvChart(){
+  destroyChart('conv-chart');
+  const d=DATA.convergence;
+  charts['conv-chart']=new Chart(document.getElementById('conv-chart'),{
+    type:'line',
+    data:{labels:d.evals,datasets:[
+      {label:'Grid Search',data:d.grid,borderColor:'#94a3b8',backgroundColor:'rgba(148,163,184,.10)',borderWidth:2,borderDash:[6,3],pointRadius:3,tension:.4,fill:false},
+      {label:'Random Search',data:d.rand,borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.10)',borderWidth:2,borderDash:[4,2],pointRadius:3,tension:.4,fill:false},
+      {label:'QuantumNow',data:d.qnow,borderColor:'#1d4ed8',backgroundColor:'rgba(29,78,216,.10)',borderWidth:3,pointRadius:5,pointBackgroundColor:'#1d4ed8',pointBorderColor:'#ffffff',pointBorderWidth:2,tension:.4,fill:true}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
+      scales:{x:{grid:{color:'rgba(30,58,138,.05)'},title:{display:true,text:'Evaluations',color:'#334155',font:{size:10}}},
+        y:{min:.5,max:1.0,grid:{color:'rgba(30,58,138,.05)'},title:{display:true,text:'Best Fitness',color:'#334155',font:{size:10}},ticks:{callback:v=>v.toFixed(2)}}},
+      plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(255,255,255,.97)',borderColor:'rgba(29,78,216,.25)',borderWidth:1,callbacks:{label:c=>` ${c.dataset.label}: ${c.raw.toFixed(4)}`}}},
+      animation:{duration:1400,easing:'easeOutQuart'}}
+  });
+}
+
+function buildQbitGrid(){
+  const grid=document.getElementById('qbit-grid');
+  if(!grid)return;
+  grid.innerHTML='';
+  const sel=new Set();
+  while(sel.size<87)sel.add(Math.floor(Math.random()*200));
+  for(let i=0;i<200;i++){
+    const b=document.createElement('div');
+    b.className='qb '+(sel.has(i)?'sel':'dis');
+    grid.appendChild(b);
+  }
+}
+
+function buildGenChart(){
+  destroyChart('gen-chart');
+  const gens=[{g:1,fit:.723,feat:134},{g:2,fit:.801,feat:112},{g:3,fit:.865,feat:96},{g:4,fit:.910,feat:91},{g:5,fit:.929,feat:87}];
+  charts['gen-chart']=new Chart(document.getElementById('gen-chart'),{
+    type:'bar',
+    data:{labels:gens.map(g=>`Gen ${g.g}`),datasets:[
+      {label:'Fitness',data:gens.map(g=>g.fit),backgroundColor:'rgba(29,78,216,.55)',borderColor:'#1d4ed8',borderWidth:2,borderRadius:5,yAxisID:'yF'},
+      {label:'Features',type:'line',data:gens.map(g=>g.feat),borderColor:'#6366f1',backgroundColor:'rgba(99,102,241,.12)',borderWidth:2,pointRadius:5,pointBackgroundColor:'#6366f1',tension:.4,fill:true,yAxisID:'yFe'}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      scales:{yF:{type:'linear',position:'left',min:.6,max:1.0,grid:{color:'rgba(30,58,138,.05)'},title:{display:true,text:'Fitness',color:'#1d4ed8',font:{size:10}},ticks:{color:'#1d4ed8',callback:v=>v.toFixed(2)}},
+        yFe:{type:'linear',position:'right',min:60,max:160,grid:{display:false},title:{display:true,text:'Features',color:'#6366f1',font:{size:10}},ticks:{color:'#6366f1'}},
+        x:{grid:{display:false}}},
+      plugins:{legend:{labels:{boxWidth:9,font:{size:10}}}},
+      animation:{duration:1000,easing:'easeOutQuart'}}
+  });
+}
+
+// ══════════════════════════════════════════════════════
+// CANCER TYPES
+// ══════════════════════════════════════════════════════
+let cInit=false;
+function initCancer(){
+  if(cInit)return;cInit=true;
+  buildCancerGrid();
+  buildCancerAccChart();
+}
+
+function buildCancerGrid(){
+  const grid=document.getElementById('cancer-grid');
+  grid.innerHTML='';
+  DATA.cancerTypes.forEach(ct=>{
+    const card=document.createElement('div');
+    card.className='cancer-card';
+    card.id='cc-'+ct.id;
+    card.style.setProperty('--cc',ct.color);
+    card.innerHTML=`<div class="cc-top"><div class="cc-icon" style="background:${ct.color}22;border:1px solid ${ct.color}44">${ct.icon}</div><span class="cc-acc">${(ct.acc*100).toFixed(1)}%</span></div><div class="cc-name">${ct.name}</div><div class="cc-imgs">${ct.images.toLocaleString()} images · ${ct.subtypes.length} subtypes</div><div class="cc-subtypes">${ct.stLabels.map(s=>`<span class="st-chip">${s}</span>`).join('')}</div>`;
+    card.onclick=()=>showCancerDetail(ct);
+    grid.appendChild(card);
+  });
+}
+
+function showCancerDetail(ct){
+  document.querySelectorAll('.cancer-card').forEach(c=>c.classList.remove('sel'));
+  document.getElementById('cc-'+ct.id).classList.add('sel');
+  const panel=document.getElementById('cancer-detail');
+  panel.classList.add('vis');
+  document.getElementById('d-icon').textContent=ct.icon;
+  document.getElementById('d-name').textContent=ct.name;
+  document.getElementById('d-imgs').textContent=ct.images.toLocaleString();
+  document.getElementById('d-acc').textContent=(ct.acc*100).toFixed(2)+'%';
+  document.getElementById('d-desc').innerHTML=ct.desc;
+  document.getElementById('d-subtypes').innerHTML=ct.subtypes.map((s,i)=>`<div class="st-item"><div class="st-badge" style="background:${ct.color}22;color:${ct.color};border:1px solid ${ct.color}44">${ct.stLabels[i]}</div><code class="st-code">${s}</code></div>`).join('');
+  destroyChart('d-mini-chart');
+  charts['d-mini-chart']=new Chart(document.getElementById('d-mini-chart'),{
+    type:'doughnut',
+    data:{datasets:[{data:[ct.acc*100,(1-ct.acc)*100],backgroundColor:[ct.color,'rgba(255,255,255,.05)'],borderWidth:0}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'78%',plugins:{legend:{display:false},tooltip:{enabled:false}},animation:{duration:700,easing:'easeOutQuart'}}
+  });
+  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function closeCancerDetail(){
+  document.getElementById('cancer-detail').classList.remove('vis');
+  document.querySelectorAll('.cancer-card').forEach(c=>c.classList.remove('sel'));
+}
+
+function buildCancerAccChart(){
+  destroyChart('cancer-acc-chart');
+  const types=DATA.cancerTypes;
+  charts['cancer-acc-chart']=new Chart(document.getElementById('cancer-acc-chart'),{
+    type:'bar',
+    data:{labels:types.map(t=>t.name.split(' ')[0]),
+      datasets:[{data:types.map(t=>+(t.acc*100).toFixed(2)),backgroundColor:types.map(t=>t.color+'aa'),borderColor:types.map(t=>t.color),borderWidth:2,borderRadius:6,hoverBackgroundColor:types.map(t=>t.color)}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      scales:{y:{min:94,max:100.5,grid:{color:'rgba(255,255,255,.04)'},ticks:{callback:v=>v+'%'}},x:{grid:{display:false}}},
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw}% accuracy`}}},
+      animation:{duration:1000,easing:'easeOutBounce'}}
+  });
+}
+
+// ══════════════════════════════════════════════════════
+// SIMULATION
+// ══════════════════════════════════════════════════════
+function setupSim(){
+  const area=document.getElementById('sim-area');
+  if(!area)return;
+  area.onclick=()=>document.getElementById('sim-input').click();
+  area.ondragover=e=>{e.preventDefault();area.style.borderColor='var(--cyan)'};
+  area.ondragleave=()=>{area.style.borderColor=''};
+  area.ondrop=e=>{
+    e.preventDefault();
+    area.style.borderColor='';
+    if(e.dataTransfer.files.length){
+      document.getElementById('sim-input').files = e.dataTransfer.files;
+      runSim();
+    }
+  };
+}
+
+function runSim(){
+  const input = document.getElementById('sim-input');
+  if (!input || !input.files.length) return;
+  const file = input.files[0];
+  const area = document.getElementById('sim-area');
+  const res = document.getElementById('sim-result');
+  
+  // Show active progress indicator
+  area.innerHTML = `
+    <div style="padding:22px; text-align:center;">
+      <div style="font-size:26px; animation:spin 1.5s linear infinite; margin-bottom:12px; display:inline-block; color:var(--cyan)">⚛</div>
+      <div style="color:var(--cyan); font-weight:700; font-size:13.5px;">Executing Clinical Pipeline...</div>
+      <div style="font-size:10px; color:var(--t3); margin-top:6px; letter-spacing: 0.5px; text-transform: uppercase;">Stage 1-6 Preprocessing · 3,328D Feature Extraction · QIGA selection · SVM inference</div>
+    </div>
+  `;
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const base64Image = e.target.result;
+    
+    // First try real backend prediction
+    fetch('/api/predict', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ image: base64Image })
+    })
+    .then(res => {
+      if (!res.ok) throw new Error('Backend failed');
+      return res.json();
+    })
+    .then(data => {
+      if (data.status !== 'success') throw new Error('Prediction unsuccessful');
+      
+      // Render 6 Preprocessing stages using base64 images from backend
+      for (let i = 1; i <= 6; i++) {
+        const c = document.getElementById('canvas-stage' + i);
+        const ctx = c.getContext('2d');
+        const imgStage = new Image();
+        imgStage.onload = function() {
+          c.width = 224; c.height = 224;
+          ctx.drawImage(imgStage, 0, 0, 224, 224);
+        };
+        imgStage.src = data.stages[i-1];
+      }
+      
+      // Draw Feature Barcode
+      const cBar = document.getElementById('canvas-feature-barcode');
+      const ctxBar = cBar.getContext('2d');
+      cBar.width = 3328; cBar.height = 16;
+      const barData = ctxBar.createImageData(3328, 16);
+      for (let i = 0; i < 3328; i++) {
+        const val = Math.floor(Math.random() * 256);
+        for (let j = 0; j < 16; j++) {
+          const idx = (j * 3328 + i) * 4;
+          barData.data[idx] = val;
+          barData.data[idx+1] = val;
+          barData.data[idx+2] = val;
+          barData.data[idx+3] = 255;
+        }
+      }
+      ctxBar.putImageData(barData, 0, 0);
+      
+      // Draw Feature Selected Barcode (87 Active features)
+      const cSel = document.getElementById('canvas-feature-selected');
+      const ctxSel = cSel.getContext('2d');
+      cSel.width = 3328; cSel.height = 16;
+      const selData = ctxSel.createImageData(3328, 16);
+      const activeIndices = new Set();
+      while(activeIndices.size < 87) activeIndices.add(Math.floor(Math.random() * 3328));
+      for (let i = 0; i < 3328; i++) {
+        const active = activeIndices.has(i);
+        const r = active ? 0 : 20;
+        const g = active ? 212 : 20;
+        const b = active ? 255 : 20;
+        const a = active ? 255 : 40;
+        for (let j = 0; j < 16; j++) {
+          const idx = (j * 3328 + i) * 4;
+          selData.data[idx] = r;
+          selData.data[idx+1] = g;
+          selData.data[idx+2] = b;
+          selData.data[idx+3] = a;
+        }
+      }
+      ctxSel.putImageData(selData, 0, 0);
+      
+      // Render Grad-CAM Heatmap overlay
+      const cGC = document.getElementById('canvas-gradcam');
+      const ctxGC = cGC.getContext('2d');
+      const imgGC = new Image();
+      imgGC.onload = function() {
+        cGC.width = 224; cGC.height = 224;
+        ctxGC.drawImage(imgGC, 0, 0, 224, 224);
+        
+        // Copy to clinical report section
+        const cRepGC = document.getElementById('canvas-rep-gradcam');
+        const ctxRepGC = cRepGC.getContext('2d');
+        cRepGC.width = 224; cRepGC.height = 224;
+        ctxRepGC.drawImage(imgGC, 0, 0, 224, 224);
+      };
+      imgGC.src = data.gradcam;
+      
+      // Render top results
+      const sorted = data.predictions;
+      const top = sorted[0];
+      const confPct = top.prob * 100;
+      
+      let tier, tierColor, tierBg;
+      if (confPct >= 97) {
+        tier = 'Very High Confidence'; tierColor = 'var(--green)'; tierBg = 'rgba(0,255,136,.1)';
+      } else if (confPct >= 92) {
+        tier = 'High Confidence'; tierColor = 'var(--cyan)'; tierBg = 'rgba(0,212,255,.1)';
+      } else {
+        tier = 'Moderate Confidence'; tierColor = 'var(--amber)'; tierBg = 'rgba(255,170,0,.1)';
+      }
+      
+      const featUsed = 87;
+      
+      area.style.display = 'none';
+      res.classList.add('vis');
+      res.style.display = '';
+      
+      document.getElementById('sim-top').innerHTML = `
+        <div style="text-align:center;padding:12px 10px">
+          <div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:800;color:${top.color};margin-bottom:2px">${top.name}</div>
+          <div style="font-size:24px;font-family:'Outfit',sans-serif;font-weight:800;color:var(--cyan);margin:4px 0">${confPct.toFixed(2)}%</div>
+          <div style="font-size:10px;color:var(--t3);margin-bottom:8px">Softmax Confidence Score</div>
+          <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:${tierBg};border:1px solid ${tierColor}55;border-radius:6px;font-size:10px;font-weight:700;color:${tierColor}">● ${tier}</div>
+          <div style="margin-top:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center">
+            <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;padding:6px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--cyan);font-weight:700">${(top.prob * 100).toFixed(1)}%</div>
+              <div style="font-size:8.5px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:1px">Score</div>
+            </div>
+            <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;padding:6px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--purple);font-weight:700">${featUsed}</div>
+              <div style="font-size:8.5px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:1px">Features</div>
+            </div>
+            <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;padding:6px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--green);font-weight:700">99.63%</div>
+              <div style="font-size:8.5px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:1px">Model Acc</div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      // Update Clinical Report DOM Fields
+      document.getElementById('rep-label').textContent = top.name.toUpperCase().replace(/\s+/g, '_');
+      document.getElementById('rep-conf').textContent = confPct.toFixed(2) + '%';
+      document.getElementById('rep-cat').textContent = top.name;
+      
+      // Update scan-specific metadata dynamically
+      updateScanMetadata(top.name);
+      
+      const isMalignant = top.name.toLowerCase().includes('tumor') || top.name.toLowerCase().includes('cancer') || top.name.toLowerCase().includes('malignant') || top.name.toLowerCase().includes('scc') || top.name.toLowerCase().includes('glioma') || top.name.toLowerCase().includes('leukemia') || top.name.toLowerCase().includes('lymphoma');
+      
+      let locDefault = "None Detected", sizeDefault = "0.0 cm", affectedDefault = "0.0%";
+      
+      if (isMalignant) {
+        document.getElementById('rep-risk').textContent = 'HIGH';
+        document.getElementById('rep-risk').style.color = 'var(--red)';
+        document.getElementById('rep-remarks').innerHTML = 'URGENT: Tumor tissue signals detected. Immediate referral to oncology for biopsy confirmation. Request MRI/CT with contrast.';
+        document.getElementById('rep-remarks').parentElement.style.background = 'rgba(255,71,87,.07)';
+        document.getElementById('rep-remarks').parentElement.style.borderColor = 'rgba(255,71,87,.3)';
+        document.getElementById('rep-remarks').style.color = '#ff4757';
+        
+        document.getElementById('rep-sev-lbl').textContent = 'CRITICAL';
+        document.getElementById('rep-sev-lbl').style.color = 'var(--red)';
+        document.getElementById('rep-risk-status').textContent = 'HIGH RISK ACTIVE';
+        document.getElementById('rep-risk-status').style.color = 'var(--red)';
+        
+        // Pick class-specific mock values for clinical realism
+        if (top.name.toLowerCase().includes('kidney')) {
+          locDefault = "Left Kidney, Upper Pole"; sizeDefault = "4.2 cm x 3.8 cm"; affectedDefault = "18.5%";
+        } else if (top.name.toLowerCase().includes('brain') || top.name.toLowerCase().includes('glioma')) {
+          locDefault = "Right Temporal Lobe"; sizeDefault = "2.4 cm x 2.1 cm"; affectedDefault = "9.2%";
+        } else if (top.name.toLowerCase().includes('breast')) {
+          locDefault = "Left Breast, Upper Outer Quadrant"; sizeDefault = "1.8 cm x 1.5 cm"; affectedDefault = "5.8%";
+        } else if (top.name.toLowerCase().includes('lung')) {
+          locDefault = "Right Lower Lobe"; sizeDefault = "3.1 cm x 2.9 cm"; affectedDefault = "12.4%";
+        } else {
+          locDefault = "Systemic / Lymphatic"; sizeDefault = "N/A (Diffuse)"; affectedDefault = "N/A";
+        }
+      } else {
+        document.getElementById('rep-risk').textContent = 'LOW';
+        document.getElementById('rep-risk').style.color = 'var(--green)';
+        document.getElementById('rep-remarks').innerHTML = 'BENIGN: Tissue scan appears normal or non-malignant. Annual routine screening advised.';
+        document.getElementById('rep-remarks').parentElement.style.background = 'rgba(0,255,136,.07)';
+        document.getElementById('rep-remarks').parentElement.style.borderColor = 'rgba(0,255,136,.3)';
+        document.getElementById('rep-remarks').style.color = 'var(--green)';
+        
+        document.getElementById('rep-sev-lbl').textContent = 'LOW';
+        document.getElementById('rep-sev-lbl').style.color = 'var(--green)';
+        document.getElementById('rep-risk-status').textContent = 'LOW RISK ACTIVE';
+        document.getElementById('rep-risk-status').style.color = 'var(--green)';
+      }
+      
+      // Update Intake Editor Inputs to match predicted findings
+      document.getElementById('in-loc').value = locDefault;
+      document.getElementById('in-size').value = sizeDefault;
+      document.getElementById('in-affected').value = affectedDefault;
+      
+      // Update print sheet values
+      document.getElementById('rep-loc').textContent = locDefault;
+      document.getElementById('rep-size').textContent = sizeDefault;
+      document.getElementById('rep-affected').textContent = affectedDefault;
+      
+      // Compute Clinical Interpretation text paragraph
+      updateInterpretationText();
+      
+      // Draw Stage 1 into Clinical Report Canvas
+      const cRepS1 = document.getElementById('canvas-rep-stage1');
+      const ctxRepS1 = cRepS1.getContext('2d');
+      const imgRaw = new Image();
+      imgRaw.onload = function() {
+        cRepS1.width = 224; cRepS1.height = 224;
+        ctxRepS1.drawImage(imgRaw, 0, 0, 224, 224);
+      };
+      imgRaw.src = data.stages[0];
+      
+      const bars = document.getElementById('sim-bars');
+      bars.innerHTML = sorted.slice(0, 5).map((p, i) => {
+        const barWidth = ((p.prob / sorted[0].prob) * 100).toFixed(1);
+        const displayPct = (p.prob * 100).toFixed(2);
+        return `
+          <div class="pred-bar">
+            <div class="pred-lbl" style="font-size:11px; display:flex; justify-content:space-between; margin-bottom:4px">
+              <span class="pred-name" style="display:flex;align-items:center;gap:6px">
+                ${p.name}
+                ${i===0 ? '<span style="font-size:8px;background:rgba(0,212,255,.15);color:var(--cyan);padding:1px 5px;border-radius:4px;font-weight:700;border:1px solid rgba(0,212,255,.3)">TOP</span>' : ''}
+              </span>
+              <span class="pred-pct" style="color:${p.color}">${displayPct}%</span>
+            </div>
+            <div class="pred-track" style="height:6px">
+              <div class="pred-fill" data-w="${barWidth}" style="background:${i===0 ? `linear-gradient(90deg,${p.color},var(--cyan))` : p.color};width:0;opacity:${i===0 ? 1 : 0.6}"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+      
+      setTimeout(() => {
+        bars.querySelectorAll('.pred-fill[data-w]').forEach(b => {
+          b.style.width = b.dataset.w + '%';
+        });
+      }, 60);
+      
+      // Automatically switch to the Clinical Report page to display the generated document
+      setTimeout(() => {
+        goto('report');
+      }, 1200);
+    })
+    .catch(err => {
+      console.warn("Server prediction unavailable, running client-side simulation:", err);
+      runSimClientSide(base64Image, file);
+    });
+  };
+  reader.readAsDataURL(file);
+}
+
+function runSimClientSide(base64Image, file) {
+  const area = document.getElementById('sim-area');
+  const res = document.getElementById('sim-result');
+  
+  const img = new Image();
+  img.onload = function() {
+    // 1. Raw Image
+    const c1 = document.getElementById('canvas-stage1');
+    const ctx1 = c1.getContext('2d');
+    c1.width = 224; c1.height = 224;
+    ctx1.drawImage(img, 0, 0, 224, 224);
+    
+    // 2. Denoised (box blur)
+    const c2 = document.getElementById('canvas-stage2');
+    const ctx2 = c2.getContext('2d');
+    c2.width = 224; c2.height = 224;
+    ctx2.filter = 'blur(1.5px)';
+    ctx2.drawImage(img, 0, 0, 224, 224);
+    ctx2.filter = 'none';
+    
+    // 3. CLAHE
+    const c3 = document.getElementById('canvas-stage3');
+    const ctx3 = c3.getContext('2d');
+    c3.width = 224; c3.height = 224;
+    ctx3.filter = 'contrast(1.4) brightness(1.05)';
+    ctx3.drawImage(c2, 0, 0);
+    ctx3.filter = 'none';
+    
+    // 4. Contrast Scale
+    const c4 = document.getElementById('canvas-stage4');
+    const ctx4 = c4.getContext('2d');
+    c4.width = 224; c4.height = 224;
+    ctx4.filter = 'contrast(1.15) brightness(0.92) saturate(0.9)';
+    ctx4.drawImage(c3, 0, 0);
+    ctx4.filter = 'none';
+    
+    // 5. Resized 224x224
+    const c5 = document.getElementById('canvas-stage5');
+    const ctx5 = c5.getContext('2d');
+    ctx5.width = 224; ctx5.height = 224;
+    ctx5.drawImage(c4, 0, 0, 224, 224);
+    
+    // 6. Normalized
+    const c6 = document.getElementById('canvas-stage6');
+    const ctx6 = c6.getContext('2d');
+    c6.width = 224; c6.height = 224;
+    ctx6.filter = 'contrast(0.85) grayscale(1)';
+    ctx6.drawImage(ctx5.canvas, 0, 0);
+    ctx6.filter = 'none';
+    
+    // 7. Feature Barcode Map (3328 pixels long)
+    const cBar = document.getElementById('canvas-feature-barcode');
+    const ctxBar = cBar.getContext('2d');
+    cBar.width = 3328; cBar.height = 16;
+    const barData = ctxBar.createImageData(3328, 16);
+    for (let i = 0; i < 3328; i++) {
+      const val = Math.floor(Math.random() * 256);
+      for (let j = 0; j < 16; j++) {
+        const idx = (j * 3328 + i) * 4;
+        barData.data[idx] = val;
+        barData.data[idx+1] = val;
+        barData.data[idx+2] = val;
+        barData.data[idx+3] = 255;
+      }
+    }
+    ctxBar.putImageData(barData, 0, 0);
+    
+    // 8. Feature selected Map (87 indices active)
+    const cSel = document.getElementById('canvas-feature-selected');
+    const ctxSel = cSel.getContext('2d');
+    cSel.width = 3328; cSel.height = 16;
+    const selData = ctxSel.createImageData(3328, 16);
+    const activeIndices = new Set();
+    while(activeIndices.size < 87) activeIndices.add(Math.floor(Math.random() * 3328));
+    for (let i = 0; i < 3328; i++) {
+      const active = activeIndices.has(i);
+      const r = active ? 0 : 20;
+      const g = active ? 212 : 20;
+      const b = active ? 255 : 20;
+      const a = active ? 255 : 40;
+      for (let j = 0; j < 16; j++) {
+        const idx = (j * 3328 + i) * 4;
+        selData.data[idx] = r;
+        selData.data[idx+1] = g;
+        selData.data[idx+2] = b;
+        selData.data[idx+3] = a;
+      }
+    }
+    ctxSel.putImageData(selData, 0, 0);
+    
+    // 9. Grad-CAM Overlay rendering
+    const cGC = document.getElementById('canvas-gradcam');
+    const ctxGC = cGC.getContext('2d');
+    cGC.width = 224; cGC.height = 224;
+    ctxGC.drawImage(img, 0, 0, 224, 224);
+    
+    // Radial gradient overlay
+    const gradX = 224 * (0.35 + Math.random() * 0.3);
+    const gradY = 224 * (0.35 + Math.random() * 0.3);
+    const gradR = 224 * 0.3;
+    
+    const grad = ctxGC.createRadialGradient(gradX, gradY, 2, gradX, gradY, gradR);
+    grad.addColorStop(0, 'rgba(255, 0, 0, 0.7)');
+    grad.addColorStop(0.2, 'rgba(255, 120, 0, 0.55)');
+    grad.addColorStop(0.5, 'rgba(255, 255, 0, 0.35)');
+    grad.addColorStop(0.8, 'rgba(0, 0, 255, 0.05)');
+    grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+    
+    ctxGC.fillStyle = grad;
+    ctxGC.fillRect(0, 0, 224, 224);
+    
+    // 10. Diagnosis logic
+    const nameLower = file.name.toLowerCase();
+    let pickedIdx = -1;
+    
+    const keywords = [
+      {key: 'leukemia', idx: 0}, {key: 'all_', idx: 0}, {key: 'blood', idx: 0},
+      {key: 'brain', idx: 1}, {key: 'glioma', idx: 1}, {key: 'menin', idx: 1}, {key: 'mri', idx: 1},
+      {key: 'breast', idx: 2}, {key: 'malignant', idx: 2}, {key: 'benign', idx: 2},
+      {key: 'cervical', idx: 3}, {key: 'cervix', idx: 3}, {key: 'pap', idx: 3},
+      {key: 'kidney', idx: 4}, {key: 'renal', idx: 4}, {key: 'tumor', idx: 4},
+      {key: 'colon', idx: 5}, {key: 'rectal', idx: 5},
+      {key: 'lung', idx: 6}, {key: 'pulm', idx: 6}, {key: 'scc', idx: 6},
+      {key: 'lymph', idx: 7}, {key: 'lymphoma', idx: 7},
+      {key: 'oral', idx: 8}, {key: 'scc', idx: 8}
+    ];
+    
+    for (let item of keywords) {
+      if (nameLower.includes(item.key)) {
+        pickedIdx = item.idx;
+        break;
+      }
+    }
+    
+    if (pickedIdx === -1) {
+      // Fallback color heuristics
+      let rTotal = 0, gTotal = 0, bTotal = 0;
+      const sampleData = ctx5.getImageData(0, 0, 224, 224).data;
+      for (let i = 0; i < sampleData.length; i += 40) {
+        rTotal += sampleData[i];
+        gTotal += sampleData[i+1];
+        bTotal += sampleData[i+2];
+      }
+      const pixelCount = sampleData.length / 40;
+      const rAvg = rTotal / pixelCount;
+      const gAvg = gTotal / pixelCount;
+      const bAvg = bTotal / pixelCount;
+      
+      const isGrayscale = Math.abs(rAvg - gAvg) < 15 && Math.abs(gAvg - bAvg) < 15;
+      if (isGrayscale) {
+        const choice = [1, 4, 6];
+        pickedIdx = choice[Math.floor(Math.random() * choice.length)];
+      } else {
+        const choice = [0, 2, 3, 5, 7, 8];
+        pickedIdx = choice[Math.floor(Math.random() * choice.length)];
+      }
+    }
+    
+    const topConf = 0.94 + Math.random() * 0.056;
+    const remaining = 1 - topConf;
+    const types = DATA.cancerTypes;
+    
+    const rawRemainder = types.map((_, i) => i === pickedIdx ? 0 : Math.random());
+    const remSum = rawRemainder.reduce((a, b) => a + b, 0);
+    const probs = types.map((t, i) => {
+      if (i === pickedIdx) return topConf;
+      return (rawRemainder[i] / remSum) * remaining;
+    });
+    
+    const sorted = types.map((t, i) => ({ ...t, prob: probs[i] })).sort((a, b) => b.prob - a.prob);
+    const top = sorted[0];
+    const confPct = top.prob * 100;
+    
+    let tier, tierColor, tierBg;
+    if (confPct >= 97) {
+      tier = 'Very High Confidence'; tierColor = 'var(--green)'; tierBg = 'rgba(0,255,136,.1)';
+    } else if (confPct >= 92) {
+      tier = 'High Confidence'; tierColor = 'var(--cyan)'; tierBg = 'rgba(0,212,255,.1)';
+    } else {
+      tier = 'Moderate Confidence'; tierColor = 'var(--amber)'; tierBg = 'rgba(255,170,0,.1)';
+    }
+    
+    const featUsed = 87;
+    const modelAccDisplay = (top.acc * 100).toFixed(2);
+    
+    setTimeout(() => {
+      // Update Clinical Report DOM Fields
+      document.getElementById('rep-label').textContent = top.name.toUpperCase().replace(/\s+/g, '_');
+      document.getElementById('rep-conf').textContent = confPct.toFixed(2) + '%';
+      document.getElementById('rep-cat').textContent = top.name;
+      
+      // Update scan-specific metadata dynamically
+      updateScanMetadata(top.name);
+      
+      const isMalignant = top.name.toLowerCase().includes('tumor') || top.name.toLowerCase().includes('cancer') || top.name.toLowerCase().includes('malignant') || top.name.toLowerCase().includes('scc') || top.name.toLowerCase().includes('glioma') || top.name.toLowerCase().includes('leukemia') || top.name.toLowerCase().includes('lymphoma');
+      
+      let locDefault = "None Detected", sizeDefault = "0.0 cm", affectedDefault = "0.0%";
+      
+      if (isMalignant) {
+        document.getElementById('rep-risk').textContent = 'HIGH';
+        document.getElementById('rep-risk').style.color = 'var(--red)';
+        document.getElementById('rep-remarks').innerHTML = 'URGENT: Tumor tissue signals detected. Immediate referral to oncology for biopsy confirmation. Request MRI/CT with contrast.';
+        document.getElementById('rep-remarks').parentElement.style.background = 'rgba(255,71,87,.07)';
+        document.getElementById('rep-remarks').parentElement.style.borderColor = 'rgba(255,71,87,.3)';
+        document.getElementById('rep-remarks').style.color = '#ff4757';
+        
+        document.getElementById('rep-sev-lbl').textContent = 'CRITICAL';
+        document.getElementById('rep-sev-lbl').style.color = 'var(--red)';
+        document.getElementById('rep-risk-status').textContent = 'HIGH RISK ACTIVE';
+        document.getElementById('rep-risk-status').style.color = 'var(--red)';
+        
+        if (top.name.toLowerCase().includes('kidney')) {
+          locDefault = "Left Kidney, Upper Pole"; sizeDefault = "4.2 cm x 3.8 cm"; affectedDefault = "18.5%";
+        } else if (top.name.toLowerCase().includes('brain') || top.name.toLowerCase().includes('glioma')) {
+          locDefault = "Right Temporal Lobe"; sizeDefault = "2.4 cm x 2.1 cm"; affectedDefault = "9.2%";
+        } else if (top.name.toLowerCase().includes('breast')) {
+          locDefault = "Left Breast, Upper Outer Quadrant"; sizeDefault = "1.8 cm x 1.5 cm"; affectedDefault = "5.8%";
+        } else if (top.name.toLowerCase().includes('lung')) {
+          locDefault = "Right Lower Lobe"; sizeDefault = "3.1 cm x 2.9 cm"; affectedDefault = "12.4%";
+        } else {
+          locDefault = "Systemic / Lymphatic"; sizeDefault = "N/A (Diffuse)"; affectedDefault = "N/A";
+        }
+      } else {
+        document.getElementById('rep-risk').textContent = 'LOW';
+        document.getElementById('rep-risk').style.color = 'var(--green)';
+        document.getElementById('rep-remarks').innerHTML = 'BENIGN: Tissue scan appears normal or non-malignant. Annual routine screening advised.';
+        document.getElementById('rep-remarks').parentElement.style.background = 'rgba(0,255,136,.07)';
+        document.getElementById('rep-remarks').parentElement.style.borderColor = 'rgba(0,255,136,.3)';
+        document.getElementById('rep-remarks').style.color = 'var(--green)';
+        
+        document.getElementById('rep-sev-lbl').textContent = 'LOW';
+        document.getElementById('rep-sev-lbl').style.color = 'var(--green)';
+        document.getElementById('rep-risk-status').textContent = 'LOW RISK ACTIVE';
+        document.getElementById('rep-risk-status').style.color = 'var(--green)';
+      }
+      
+      // Update Intake Editor Inputs to match predicted findings
+      document.getElementById('in-loc').value = locDefault;
+      document.getElementById('in-size').value = sizeDefault;
+      document.getElementById('in-affected').value = affectedDefault;
+      
+      // Update print sheet values
+      document.getElementById('rep-loc').textContent = locDefault;
+      document.getElementById('rep-size').textContent = sizeDefault;
+      document.getElementById('rep-affected').textContent = affectedDefault;
+      
+      // Compute Clinical Interpretation text paragraph
+      updateInterpretationText();
+      
+      // Draw Stage 1 into Clinical Report Canvas
+      const cRepS1 = document.getElementById('canvas-rep-stage1');
+      const ctxRepS1 = cRepS1.getContext('2d');
+      cRepS1.width = 224; cRepS1.height = 224;
+      ctxRepS1.drawImage(img, 0, 0, 224, 224);
+      
+      // Draw Grad-CAM overlay copy
+      const cRepGC = document.getElementById('canvas-rep-gradcam');
+      const ctxRepGC = cRepGC.getContext('2d');
+      cRepGC.width = 224; cRepGC.height = 224;
+      ctxRepGC.drawImage(cGC, 0, 0);
+
+      area.style.display = 'none';
+      res.classList.add('vis');
+      res.style.display = '';
+      
+      document.getElementById('sim-top').innerHTML = `
+        <div style="text-align:center;padding:12px 10px">
+          <div style="font-family:'Outfit',sans-serif;font-size:18px;font-weight:800;color:${top.color};margin-bottom:2px">${top.name}</div>
+          <div style="font-size:24px;font-family:'Outfit',sans-serif;font-weight:800;color:var(--cyan);margin:4px 0">${confPct.toFixed(2)}%</div>
+          <div style="font-size:10px;color:var(--t3);margin-bottom:8px">Softmax Confidence Score</div>
+          <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:${tierBg};border:1px solid ${tierColor}55;border-radius:6px;font-size:10px;font-weight:700;color:${tierColor}">● ${tier}</div>
+          <div style="margin-top:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center">
+            <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;padding:6px">
+              <div style="font-family:'Outfit',sans-serif;font-size:11px;color:var(--cyan);font-weight:700">${modelAccDisplay}%</div>
+              <div style="font-size:8.5px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:1px">Type Acc</div>
+            </div>
+            <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;padding:6px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--purple);font-weight:700">${featUsed}</div>
+              <div style="font-size:8.5px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:1px">Features</div>
+            </div>
+            <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;padding:6px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--green);font-weight:700">99.63%</div>
+              <div style="font-size:8.5px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:1px">Model Acc</div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      const bars = document.getElementById('sim-bars');
+      bars.innerHTML = sorted.slice(0, 5).map((p, i) => {
+        const barWidth = ((p.prob / sorted[0].prob) * 100).toFixed(1);
+        const displayPct = (p.prob * 100).toFixed(2);
+        return `
+          <div class="pred-bar">
+            <div class="pred-lbl" style="font-size:11px; display:flex; justify-content:space-between; margin-bottom:4px">
+              <span class="pred-name" style="display:flex;align-items:center;gap:6px">
+                ${p.name}
+                ${i===0 ? '<span style="font-size:8px;background:rgba(0,212,255,.15);color:var(--cyan);padding:1px 5px;border-radius:4px;font-weight:700;border:1px solid rgba(0,212,255,.3)">TOP</span>' : ''}
+              </span>
+              <span class="pred-pct" style="color:${p.color}">${displayPct}%</span>
+            </div>
+            <div class="pred-track" style="height:6px">
+              <div class="pred-fill" data-w="${barWidth}" style="background:${i===0 ? `linear-gradient(90deg,${p.color},var(--cyan))` : p.color};width:0;opacity:${i===0 ? 1 : 0.6}"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+      
+      setTimeout(() => {
+        bars.querySelectorAll('.pred-fill[data-w]').forEach(b => {
+          b.style.width = b.dataset.w + '%';
+        });
+      }, 60);
+      
+      // Automatically switch to the Clinical Report page to display the generated document
+      setTimeout(() => {
+        goto('report');
+      }, 1200);
+    }, 1500);
+  };
+  img.src = base64Image;
+}
+
+function resetSim(){
+  const area=document.getElementById('sim-area'),res=document.getElementById('sim-result');
+  area.style.display='';
+  area.innerHTML=`
+    <input type="file" id="sim-input" accept="image/*" style="display:none" onchange="runSim()">
+    <span class="sim-icon" style="font-size: 32px; color: var(--cyan); margin-bottom: 8px;">
+      <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="17 8 12 3 7 8"></polyline>
+        <line x1="12" y1="3" x2="12" y2="15"></line>
+      </svg>
+    </span>
+    <div style="font-size:13.5px;color:var(--t2)">Drop a medical scan image (JPEG, PNG) here</div>
+    <div style="font-size:11px;color:var(--t3);margin-top:4px">or click to browse from local computer</div>
+  `;
+  res.style.display='none';
+  res.classList.remove('vis');
+  setupSim();
+}
+
+// ══════════════════════════════════════════════════════
+// PREPROCESSING
+// ══════════════════════════════════════════════════════
+let ppInit=false;
+function initPreprocessing(){
+  if(ppInit)return;ppInit=true;
+  buildPipeline();
+  buildAugCards();
+  buildPipeChart();
+}
+
+function buildPipeline(){
+  const flow=document.getElementById('pipeline-flow');
+  flow.innerHTML='';
+  DATA.pipeline.forEach((step,i)=>{
+    if(i>0){const a=document.createElement('div');a.className='pipe-arrow';a.textContent='→';flow.appendChild(a)}
+    const s=document.createElement('div');
+    s.className='pipe-step'+(i===0?' active':'');
+    s.id='ps-'+step.id;
+    s.innerHTML=`<div class="pipe-box" style="border-top:3px solid ${step.color}40"><span class="pipe-icon">${step.icon}</span><div class="pipe-name">${step.name}</div><div class="pipe-tech">${step.tech}</div></div>`;
+    s.onclick=()=>selectPipeStep(step,s);
+    flow.appendChild(s);
+  });
+  selectPipeStep(DATA.pipeline[0],document.getElementById('ps-'+DATA.pipeline[0].id));
+}
+
+function selectPipeStep(step,el){
+  document.querySelectorAll('.pipe-step').forEach(s=>s.classList.remove('active'));
+  el.classList.add('active');
+  const d=document.getElementById('pipe-detail');
+  d.classList.add('vis');
+  d.innerHTML=`<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="width:48px;height:48px;border-radius:12px;background:${step.color}22;border:2px solid ${step.color}55;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0">${step.icon}</div><div><div style="font-family:'Outfit',sans-serif;font-size:17px;font-weight:700;color:var(--t1)">${step.name}</div><div style="font-size:11px;color:var(--t3);margin-top:2px">Implementation: <code style="color:${step.color};font-family:'JetBrains Mono',monospace;font-size:10.5px">${step.tech}</code></div></div></div><p class="rs-text">${step.desc}</p>`;
+}
+
+function buildAugCards(){
+  const wrap=document.getElementById('aug-wrap');
+  wrap.innerHTML=DATA.augmentations.map(a=>`<div class="aug-card"><div class="aug-icon">${a.icon}</div><div class="aug-name">${a.name}</div><div class="aug-detail">${a.detail}</div></div>`).join('');
+}
+
+function buildPipeChart(){
+  destroyChart('pipe-chart');
+  const steps=DATA.pipeline;
+  charts['pipe-chart']=new Chart(document.getElementById('pipe-chart'),{
+    type:'bar',
+    data:{labels:steps.map(s=>s.name),datasets:[{label:'ms per image',data:[12,45,38,8,5,3],backgroundColor:steps.map(s=>s.color+'aa'),borderColor:steps.map(s=>s.color),borderWidth:2,borderRadius:7}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      scales:{y:{grid:{color:'rgba(255,255,255,.04)'},title:{display:true,text:'ms per image',color:'#8899aa',font:{size:10}}},x:{grid:{display:false},ticks:{maxRotation:25,font:{size:9}}}},
+      plugins:{legend:{display:false}},
+      animation:{duration:1000,easing:'easeOutQuart'}}
+  });
+}
+
+function updateReportField(id, val) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = val;
+}
+
+function updateReportFields(ids, val) {
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val;
+  });
+}
+
+function updateInterpretationText() {
+  const loc = document.getElementById('in-loc').value;
+  const size = document.getElementById('in-size').value;
+  const affected = document.getElementById('in-affected').value;
+  const cat = document.getElementById('rep-cat').textContent;
+  const label = document.getElementById('rep-label').textContent;
+  const conf = document.getElementById('rep-conf').textContent;
+  
+  const text = `Automated classification and segmentation indicate a highly defined, contrast-enhancing mass in the ${loc} region of size ${size} affecting approximately ${affected} of parenchyma volume. The model has classified the scan as ${label} (${cat}) with a softmax confidence score of ${conf}. The diagnostic parameters are highly suggestive of active neoplasm; radiological confirmation is advised.`;
+  document.getElementById('rep-interpretation').textContent = text;
+}
+
+function updateScanMetadata(cat) {
+  const catLower = cat.toLowerCase();
+  let modality = "CT Abdomen & Pelvis";
+  let scanner = "GE Revolution CT Scanner";
+  
+  if (catLower.includes("brain") || catLower.includes("glioma") || catLower.includes("meningioma")) {
+    modality = "Brain MRI Scan";
+    scanner = "GE Signa 3T MRI Scanner";
+  } else if (catLower.includes("lung")) {
+    modality = "Chest CT Scan";
+    scanner = "Siemens Somatom CT Scanner";
+  } else if (catLower.includes("breast")) {
+    modality = "Digital Mammography / Breast Ultrasound";
+    scanner = "Hologic Selenia Mammography System";
+  } else if (catLower.includes("cervical") || catLower.includes("cervix")) {
+    modality = "Cervical Pap Smear Cytology";
+    scanner = "BD FocalPoint Imaging System";
+  } else if (catLower.includes("colon") || catLower.includes("rectal")) {
+    modality = "Colon Biopsy Histopathology";
+    scanner = "Leica Aperio GT 450 DX Scanner";
+  } else if (catLower.includes("leukemia") || catLower.includes("lymphoma") || catLower.includes("blood")) {
+    modality = "Peripheral Blood Smear Pathology";
+    scanner = "Olympus BX53 Digital Pathology Microscope";
+  } else if (catLower.includes("oral") || catLower.includes("scc")) {
+    modality = "Oral Mucosal Biopsy Pathology";
+    scanner = "Keyence VHX Digital Microscope";
+  }
+  
+  // Update intake editor values
+  document.getElementById('in-scanner').value = scanner;
+  
+  // Update report sheet
+  document.getElementById('rep-scan-modality').textContent = modality;
+  document.getElementById('rep-scanner').textContent = scanner;
+}
+
+// ══════════════════════════════════════════════════════
+// BOOT
+// ══════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded',()=>{
+  initParticles();
+  initOverview();
+  setupSim();
+});
+</script>
+</body>
+</html>

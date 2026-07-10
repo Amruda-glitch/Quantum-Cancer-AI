@@ -1,0 +1,1301 @@
+file_path,class_name,class_id,parent_folder,subclass,split
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0017.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0038.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0002.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0044.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0012.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0022.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0014.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0003.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0015.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0045.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0037.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0021.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0029.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0027.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0009.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0018.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0046.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0031.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0031.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0004.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0010.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0016.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0043.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0027.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0037.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0013.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0048.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0011.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0006.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0045.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0038.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0023.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0013.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0037.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0004.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0020.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0012.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0046.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0033.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0023.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0022.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0011.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0011.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0045.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0011.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0003.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0026.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0007.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0024.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0014.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0006.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0046.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0004.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0046.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0044.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0001.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0012.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0043.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0017.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0031.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0003.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0039.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0007.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0027.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0036.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0029.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0016.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0020.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0015.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0028.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0047.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0030.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0016.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0035.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0016.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0047.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0005.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0030.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0005.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0047.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0036.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0019.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0010.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0034.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0043.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0034.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0019.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0041.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0024.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0026.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0014.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0034.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0049.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0001.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0006.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0023.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0028.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0035.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0013.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0002.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0025.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0005.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0030.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0034.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0050.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0049.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0032.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0025.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0049.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0035.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0029.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0021.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0035.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0049.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0020.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0039.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0050.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0033.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0028.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0022.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0032.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0028.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0010.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0033.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0015.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0020.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0040.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0019.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0004.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0041.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0045.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0042.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0044.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0017.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0050.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0008.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0026.jpg,Leukemia,0,ALL,all_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0031.jpg,Leukemia,0,ALL,all_pro,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0048.jpg,Leukemia,0,ALL,all_pre,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0025.jpg,Leukemia,0,ALL,all_early,train
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0009.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0003.jpg,Leukemia,0,ALL,all_pro,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0018.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0050.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0043.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0026.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0042.jpg,Leukemia,0,ALL,all_pre,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0021.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0047.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0032.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0038.jpg,Leukemia,0,ALL,all_pre,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0018.jpg,Leukemia,0,ALL,all_pre,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0012.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0018.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0039.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0042.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0025.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0048.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0033.jpg,Leukemia,0,ALL,all_pro,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0041.jpg,Leukemia,0,ALL,all_pro,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0037.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0032.jpg,Leukemia,0,ALL,all_pro,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0040.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0019.jpg,Leukemia,0,ALL,all_pro,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0038.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0036.jpg,Leukemia,0,ALL,all_pro,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0041.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0002.jpg,Leukemia,0,ALL,all_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0022.jpg,Leukemia,0,ALL,all_early,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0001.jpg,Leukemia,0,ALL,all_pro,val
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0015.jpg,Leukemia,0,ALL,all_pre,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0007.jpg,Leukemia,0,ALL,all_early,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0008.jpg,Leukemia,0,ALL,all_pre,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0042.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0017.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0001.jpg,Leukemia,0,ALL,all_early,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0044.jpg,Leukemia,0,ALL,all_pre,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0048.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0005.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0030.jpg,Leukemia,0,ALL,all_pre,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0010.jpg,Leukemia,0,ALL,all_early,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0006.jpg,Leukemia,0,ALL,all_early,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0024.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0008.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0009.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0009.jpg,Leukemia,0,ALL,all_pre,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0002.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0023.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pre\all_pre_0040.jpg,Leukemia,0,ALL,all_pre,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0024.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0027.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0039.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0036.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0008.jpg,Leukemia,0,ALL,all_early,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0013.jpg,Leukemia,0,ALL,all_early,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_early\all_early_0021.jpg,Leukemia,0,ALL,all_early,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0040.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0007.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_benign\all_benign_0029.jpg,Leukemia,0,ALL,all_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\ALL\all_pro\all_pro_0014.jpg,Leukemia,0,ALL,all_pro,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0032.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0005.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0031.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0031.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0047.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0028.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0037.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0023.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0028.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0022.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0009.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0040.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0040.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0015.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0048.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0041.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0033.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0042.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0041.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0017.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0020.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0047.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0027.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0003.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0029.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0015.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0036.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0039.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0049.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0040.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0004.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0018.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0034.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0010.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0021.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0039.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0035.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0038.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0030.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0015.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0050.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0023.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0026.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0027.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0026.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0029.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0047.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0045.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0019.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0032.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0030.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0024.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0001.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0017.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0025.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0001.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0046.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0011.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0004.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0042.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0026.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0002.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0038.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0012.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0020.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0049.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0022.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0023.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0012.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0043.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0018.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0045.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0042.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0021.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0034.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0025.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0045.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0048.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0022.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0024.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0050.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0029.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0049.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0019.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0021.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0006.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0027.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0014.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0044.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0048.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0008.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0008.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0033.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0034.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0037.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0007.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0044.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0010.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0007.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0050.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0046.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0006.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0035.jpg,Brain Cancer,1,Brain Cancer,brain_menin,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0005.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0013.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0025.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0003.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0004.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0012.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0001.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0032.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0011.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0014.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0024.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0044.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0043.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0038.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0020.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0028.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0013.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0036.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0036.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0041.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0016.jpg,Brain Cancer,1,Brain Cancer,brain_menin,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0010.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0043.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0011.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0009.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0018.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0035.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0016.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0019.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0002.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0007.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0009.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0006.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0037.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0017.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0008.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0014.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_glioma\brain_glioma_0031.jpg,Brain Cancer,1,Brain Cancer,brain_glioma,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0016.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0033.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0013.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0046.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0003.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0030.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0002.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_tumor\brain_tumor_0039.jpg,Brain Cancer,1,Brain Cancer,brain_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Brain Cancer\brain_menin\brain_menin_0005.jpg,Brain Cancer,1,Brain Cancer,brain_menin,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0023.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0026.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0035.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0016.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0039.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0024.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0016.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0050.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0032.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0027.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0040.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0042.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0049.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0038.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0011.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0017.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0007.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0014.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0043.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0028.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0002.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0030.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0025.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0026.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0003.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0031.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0012.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0012.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0027.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0022.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0042.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0038.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0005.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0008.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0006.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0047.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0036.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0029.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0011.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0001.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0029.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0031.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0008.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0001.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0003.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0013.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0049.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0005.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0006.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0004.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0004.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0041.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0033.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0048.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0045.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0044.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0010.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0022.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0046.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0035.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0025.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0019.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0040.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0020.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0037.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0015.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0034.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0018.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0014.jpg,Breast Cancer,2,Breast Cancer,breast_benign,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0024.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0021.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0043.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0018.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0047.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0020.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0007.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0021.jpg,Breast Cancer,2,Breast Cancer,breast_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0037.jpg,Breast Cancer,2,Breast Cancer,breast_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0048.jpg,Breast Cancer,2,Breast Cancer,breast_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0032.jpg,Breast Cancer,2,Breast Cancer,breast_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0009.jpg,Breast Cancer,2,Breast Cancer,breast_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0045.jpg,Breast Cancer,2,Breast Cancer,breast_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0050.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0034.jpg,Breast Cancer,2,Breast Cancer,breast_benign,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0015.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0028.jpg,Breast Cancer,2,Breast Cancer,breast_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0019.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0044.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0013.jpg,Breast Cancer,2,Breast Cancer,breast_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0023.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0030.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0046.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0002.jpg,Breast Cancer,2,Breast Cancer,breast_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0010.jpg,Breast Cancer,2,Breast Cancer,breast_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0041.jpg,Breast Cancer,2,Breast Cancer,breast_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0009.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0039.jpg,Breast Cancer,2,Breast Cancer,breast_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0033.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_malignant\breast_malignant_0036.jpg,Breast Cancer,2,Breast Cancer,breast_malignant,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Breast Cancer\breast_benign\breast_benign_0017.jpg,Breast Cancer,2,Breast Cancer,breast_benign,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0044.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0040.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0013.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0003.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0005.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0047.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0032.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0012.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0003.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0017.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0031.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0011.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0006.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0043.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0008.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0037.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0026.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0034.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0035.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0016.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0036.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0020.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0042.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0028.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0037.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0039.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0038.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0045.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0013.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0043.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0010.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0002.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0044.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0038.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0037.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0002.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0038.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0032.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0048.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0026.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0028.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0036.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0040.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0001.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0033.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0027.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0005.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0050.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0020.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0017.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0004.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0013.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0015.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0029.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0009.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0025.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0035.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0025.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0036.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0038.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0046.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0045.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0049.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0019.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0015.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0020.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0031.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0013.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0045.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0036.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0041.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0034.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0017.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0023.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0021.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0029.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0021.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0001.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0015.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0027.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0028.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0049.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0016.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0035.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0047.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0033.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0023.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0021.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0025.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0016.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0007.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0026.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0018.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0010.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0050.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0045.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0023.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0029.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0040.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0014.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0043.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0047.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0042.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0042.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0012.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0027.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0024.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0027.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0046.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0007.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0009.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0042.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0025.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0047.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0018.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0050.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0044.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0030.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0046.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0035.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0009.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0023.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0039.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0017.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0006.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0004.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0019.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0005.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0019.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0014.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0011.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0024.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0048.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0032.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0023.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0022.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0044.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0022.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0041.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0005.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0009.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0014.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0020.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0033.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0025.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0004.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0024.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0002.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0029.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0041.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0011.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0028.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0046.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0045.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0033.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0008.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0016.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0033.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0042.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0026.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0004.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0034.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0005.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0030.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0030.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0027.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0032.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0040.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0010.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0003.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0012.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0011.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0044.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0001.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0043.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0026.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0021.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0034.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0001.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0041.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0012.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0016.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0049.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0048.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0049.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0047.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0007.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0006.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0043.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0031.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0037.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0039.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0012.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0003.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0034.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0031.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0018.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0049.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0046.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0017.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0030.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0008.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0014.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0038.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0024.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0015.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0031.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0015.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0032.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0013.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0048.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0018.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0022.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0035.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0003.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0050.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0019.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0007.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0008.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0009.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0004.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0011.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0029.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0040.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0018.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0010.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0002.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0007.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0021.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0020.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0010.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0024.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0048.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0028.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0030.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0002.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_dyk\cervix_dyk_0041.jpg,Cervical Cancer,3,Cervical Cancer,cervix_dyk,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0019.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0014.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0008.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0050.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0022.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0022.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0006.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_mep\cervix_mep_0006.jpg,Cervical Cancer,3,Cervical Cancer,cervix_mep,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0039.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0001.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_koc\cervix_koc_0036.jpg,Cervical Cancer,3,Cervical Cancer,cervix_koc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_sfi\cervix_sfi_0037.jpg,Cervical Cancer,3,Cervical Cancer,cervix_sfi,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Cervical Cancer\cervix_pab\cervix_pab_0039.jpg,Cervical Cancer,3,Cervical Cancer,cervix_pab,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0012.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0043.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0047.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0026.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0019.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0049.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0018.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0041.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0035.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0022.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0010.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0047.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0038.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0025.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0035.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0024.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0027.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0040.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0015.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0013.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0039.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0023.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0006.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0014.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0001.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0001.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0021.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0016.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0043.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0012.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0022.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0014.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0023.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0029.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0003.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0034.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0036.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0016.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0048.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0005.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0013.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0021.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0025.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0037.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0037.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0002.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0002.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0038.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0028.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0019.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0008.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0046.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0008.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0046.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0048.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0007.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0039.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0032.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0045.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0050.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0017.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0027.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0030.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0040.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0015.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0031.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0017.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0031.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0020.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0030.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0026.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0032.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0004.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0006.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0009.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0029.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0045.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0044.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0020.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0003.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0011.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0050.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0033.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0004.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0036.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0042.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0044.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0041.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0009.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0028.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0042.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0049.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0034.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0007.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0024.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0010.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0018.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0005.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_tumor\kidney_tumor_0033.jpg,Kidney Cancer,4,Kidney Cancer,kidney_tumor,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Kidney Cancer\kidney_normal\kidney_normal_0011.jpg,Kidney Cancer,4,Kidney Cancer,kidney_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0029.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0034.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0012.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0032.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0024.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0028.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0047.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0030.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0007.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0016.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0041.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0047.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0033.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0027.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0046.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0005.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0001.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0050.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0006.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0042.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0037.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0001.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0007.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0040.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0010.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0026.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0038.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0025.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0019.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0006.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0009.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0005.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0014.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0039.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0015.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0035.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0040.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0021.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0013.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0008.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0018.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0017.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0009.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0018.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0030.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0019.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0002.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0022.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0004.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0048.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0035.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0023.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0033.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0044.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0020.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0037.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0039.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0043.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0020.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0016.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0045.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0026.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0015.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0038.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0050.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0003.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0048.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0021.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0011.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0045.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0043.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0003.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0031.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0011.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0025.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0017.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0002.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0022.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0031.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0027.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0049.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0041.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0034.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0046.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0028.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0013.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0024.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0042.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0014.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0004.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0044.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0049.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0036.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0029.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0023.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0010.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0032.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_bnt\colon_bnt_0008.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0036.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\colon_aca\colon_aca_0012.jpg,Colon Cancer,5,Lung and Colon Cancer,colon_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0036.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0024.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0025.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0036.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0046.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0006.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0015.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0024.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0042.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0009.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0007.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0034.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0004.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0046.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0033.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0043.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0001.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0047.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0043.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0017.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0025.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0019.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0046.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0033.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0032.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0022.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0004.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0022.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0037.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0010.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0039.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0032.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0041.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0016.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0032.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0001.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0042.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0045.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0013.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0036.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0008.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0012.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0018.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0049.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0018.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0050.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0002.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0047.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0006.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0044.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0041.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0012.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0002.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0043.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0029.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0004.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0048.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0050.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0021.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0003.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0017.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0006.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0019.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0034.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0049.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0002.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0027.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0010.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0016.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0007.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0042.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0045.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0035.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0020.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0050.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0040.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0035.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0020.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0029.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0020.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0015.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0024.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0026.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0025.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0028.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0012.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0018.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0049.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0005.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0009.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0040.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0044.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0041.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0037.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0044.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0005.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0038.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0011.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0027.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0039.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0031.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0003.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0001.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0009.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0010.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0021.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0023.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0033.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0021.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0011.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0035.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0034.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0028.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0031.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0027.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0030.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0013.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0045.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0029.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0008.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0030.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0023.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0040.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0005.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0026.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0011.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0037.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0014.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0016.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0048.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0008.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0007.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0031.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0014.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0022.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0028.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0038.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0039.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0047.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0019.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0026.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0003.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0017.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0030.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0023.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0015.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0014.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_aca\lung_aca_0048.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_aca,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_bnt\lung_bnt_0038.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_bnt,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lung and Colon Cancer\lung_scc\lung_scc_0013.jpg,Lung Cancer,6,Lung and Colon Cancer,lung_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0018.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0003.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0047.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0048.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0033.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0013.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0022.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0012.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0027.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0034.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0031.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0039.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0028.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0004.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0007.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0008.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0011.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0002.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0010.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0038.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0017.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0015.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0002.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0023.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0042.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0045.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0036.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0049.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0006.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0034.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0040.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0050.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0016.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0033.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0003.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0036.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0017.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0021.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0029.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0035.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0046.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0023.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0001.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0026.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0029.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0022.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0050.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0028.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0010.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0011.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0037.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0027.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0010.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0047.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0048.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0009.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0045.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0037.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0029.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0005.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0023.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0007.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0006.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0026.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0017.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0005.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0014.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0040.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0044.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0032.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0018.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0038.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0006.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0048.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0032.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0043.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0044.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0030.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0012.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0042.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0016.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0049.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0020.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0015.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0043.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0045.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0031.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0047.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0033.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0020.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0013.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0035.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0025.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0026.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0039.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0043.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0037.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0001.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0022.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0015.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0001.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0044.jpg,Lymphoma,7,Lymphoma,lymph_cll,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0021.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0002.jpg,Lymphoma,7,Lymphoma,lymph_mcl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0049.jpg,Lymphoma,7,Lymphoma,lymph_fl,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0036.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0009.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0018.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0046.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0024.jpg,Lymphoma,7,Lymphoma,lymph_mcl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0027.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0025.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0050.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0019.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0021.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0009.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0046.jpg,Lymphoma,7,Lymphoma,lymph_mcl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0011.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0039.jpg,Lymphoma,7,Lymphoma,lymph_mcl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0007.jpg,Lymphoma,7,Lymphoma,lymph_mcl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0004.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0035.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0041.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0016.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0038.jpg,Lymphoma,7,Lymphoma,lymph_cll,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0042.jpg,Lymphoma,7,Lymphoma,lymph_fl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0020.jpg,Lymphoma,7,Lymphoma,lymph_mcl,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0028.jpg,Lymphoma,7,Lymphoma,lymph_mcl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0040.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0031.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0019.jpg,Lymphoma,7,Lymphoma,lymph_mcl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0030.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0008.jpg,Lymphoma,7,Lymphoma,lymph_fl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0024.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0005.jpg,Lymphoma,7,Lymphoma,lymph_mcl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0004.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0030.jpg,Lymphoma,7,Lymphoma,lymph_fl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0041.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0012.jpg,Lymphoma,7,Lymphoma,lymph_fl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0008.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0032.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0025.jpg,Lymphoma,7,Lymphoma,lymph_mcl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0013.jpg,Lymphoma,7,Lymphoma,lymph_mcl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0024.jpg,Lymphoma,7,Lymphoma,lymph_fl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0034.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0041.jpg,Lymphoma,7,Lymphoma,lymph_mcl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0019.jpg,Lymphoma,7,Lymphoma,lymph_fl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_fl\lymph_fl_0003.jpg,Lymphoma,7,Lymphoma,lymph_fl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_cll\lymph_cll_0014.jpg,Lymphoma,7,Lymphoma,lymph_cll,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Lymphoma\lymph_mcl\lymph_mcl_0014.jpg,Lymphoma,7,Lymphoma,lymph_mcl,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0035.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0027.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0006.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0034.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0001.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0034.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0031.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0028.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0042.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0011.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0016.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0023.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0008.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0025.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0022.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0008.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0045.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0047.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0013.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0012.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0050.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0042.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0044.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0006.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0018.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0017.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0011.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0048.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0024.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0005.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0016.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0024.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0036.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0029.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0020.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0003.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0007.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0009.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0017.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0040.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0013.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0041.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0015.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0023.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0003.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0015.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0019.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0032.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0002.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0022.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0004.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0048.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0040.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0044.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0033.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0001.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0018.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0021.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0043.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0004.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0035.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0043.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0028.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0038.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0046.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0049.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0046.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0014.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0012.jpg,Oral Cancer,8,Oral Cancer,oral_scc,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0050.jpg,Oral Cancer,8,Oral Cancer,oral_normal,train
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0026.jpg,Oral Cancer,8,Oral Cancer,oral_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0027.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0047.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0037.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0005.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0039.jpg,Oral Cancer,8,Oral Cancer,oral_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0026.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0045.jpg,Oral Cancer,8,Oral Cancer,oral_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0007.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0010.jpg,Oral Cancer,8,Oral Cancer,oral_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0021.jpg,Oral Cancer,8,Oral Cancer,oral_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0020.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0037.jpg,Oral Cancer,8,Oral Cancer,oral_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0041.jpg,Oral Cancer,8,Oral Cancer,oral_scc,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0002.jpg,Oral Cancer,8,Oral Cancer,oral_normal,val
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0036.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0039.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0009.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0033.jpg,Oral Cancer,8,Oral Cancer,oral_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0032.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0010.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0030.jpg,Oral Cancer,8,Oral Cancer,oral_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0019.jpg,Oral Cancer,8,Oral Cancer,oral_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0025.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0014.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0031.jpg,Oral Cancer,8,Oral Cancer,oral_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0038.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0030.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_normal\oral_normal_0049.jpg,Oral Cancer,8,Oral Cancer,oral_normal,test
+c:\IBM Quantathon\Dataset\Multi Cancer\Oral Cancer\oral_scc\oral_scc_0029.jpg,Oral Cancer,8,Oral Cancer,oral_scc,test

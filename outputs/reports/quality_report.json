@@ -1,0 +1,740 @@
+{
+    "summary": {
+        "total_images_scanned": 1300,
+        "corrupted_images_found": 0,
+        "duplicate_images_found": 0,
+        "abnormal_dimension_images": 0,
+        "extremely_blurred_images": 116
+    },
+    "corrupted_files": [],
+    "duplicates": [],
+    "abnormal_dimensions": [],
+    "blurred_files": [
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0002.jpg",
+            "blur_score": 11.359828898319392
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0004.jpg",
+            "blur_score": 14.16072838328546
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0006.jpg",
+            "blur_score": 14.918704530675313
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0007.jpg",
+            "blur_score": 13.989314922815538
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0008.jpg",
+            "blur_score": 10.76439039465913
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0009.jpg",
+            "blur_score": 11.982992473393097
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0011.jpg",
+            "blur_score": 14.911551858705934
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0012.jpg",
+            "blur_score": 12.768587386686704
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0017.jpg",
+            "blur_score": 12.299017619108781
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0020.jpg",
+            "blur_score": 9.002093545146636
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0022.jpg",
+            "blur_score": 13.942245477577671
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0027.jpg",
+            "blur_score": 10.588301613403019
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0028.jpg",
+            "blur_score": 12.775972519870265
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0036.jpg",
+            "blur_score": 14.016410436248407
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0040.jpg",
+            "blur_score": 11.400531748877256
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0042.jpg",
+            "blur_score": 8.816810405289289
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0045.jpg",
+            "blur_score": 11.226112247852143
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_benign\\all_benign_0047.jpg",
+            "blur_score": 9.587268680901616
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0003.jpg",
+            "blur_score": 6.579913903828128
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0004.jpg",
+            "blur_score": 7.482967838644981
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0005.jpg",
+            "blur_score": 14.1940078062471
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0006.jpg",
+            "blur_score": 11.071155868878122
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0007.jpg",
+            "blur_score": 10.719515666365623
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0008.jpg",
+            "blur_score": 13.815750570021919
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0012.jpg",
+            "blur_score": 13.805797218214138
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0013.jpg",
+            "blur_score": 10.360900842526462
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0016.jpg",
+            "blur_score": 14.077451663964894
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0017.jpg",
+            "blur_score": 9.050002782605588
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0020.jpg",
+            "blur_score": 13.831683969925507
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0021.jpg",
+            "blur_score": 7.207964283050387
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0024.jpg",
+            "blur_score": 13.895011529326439
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0025.jpg",
+            "blur_score": 10.92718950449489
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0026.jpg",
+            "blur_score": 11.507430548255797
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0028.jpg",
+            "blur_score": 14.378021228825673
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0033.jpg",
+            "blur_score": 14.639947987103369
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0036.jpg",
+            "blur_score": 14.922916131195961
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0039.jpg",
+            "blur_score": 10.212860101601109
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0044.jpg",
+            "blur_score": 11.331828805836267
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0046.jpg",
+            "blur_score": 14.952334922141745
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0047.jpg",
+            "blur_score": 12.17293126716686
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_early\\all_early_0050.jpg",
+            "blur_score": 12.223304748011287
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0004.jpg",
+            "blur_score": 11.628196670673788
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0005.jpg",
+            "blur_score": 11.579589703993406
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0009.jpg",
+            "blur_score": 12.848894979746547
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0011.jpg",
+            "blur_score": 8.9402032312355
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0013.jpg",
+            "blur_score": 13.113501931948122
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0016.jpg",
+            "blur_score": 13.601346906274557
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0021.jpg",
+            "blur_score": 14.424320170292049
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0029.jpg",
+            "blur_score": 8.245082656023442
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0041.jpg",
+            "blur_score": 13.29188373312354
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0046.jpg",
+            "blur_score": 10.515291203846573
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pre\\all_pre_0048.jpg",
+            "blur_score": 14.034322025472648
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0002.jpg",
+            "blur_score": 10.6764640717156
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0003.jpg",
+            "blur_score": 13.933494240453001
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0004.jpg",
+            "blur_score": 10.378704833274242
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0006.jpg",
+            "blur_score": 7.7285724298417335
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0007.jpg",
+            "blur_score": 9.950756053076475
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0008.jpg",
+            "blur_score": 9.874716619902756
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0009.jpg",
+            "blur_score": 7.18441731389612
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0011.jpg",
+            "blur_score": 9.835243220382836
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0012.jpg",
+            "blur_score": 13.320418669783976
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0015.jpg",
+            "blur_score": 7.283428025533794
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0017.jpg",
+            "blur_score": 14.00101677980274
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0019.jpg",
+            "blur_score": 11.986330839208676
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0020.jpg",
+            "blur_score": 7.523380206184811
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0021.jpg",
+            "blur_score": 14.084324510535225
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0022.jpg",
+            "blur_score": 8.446010173982359
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0023.jpg",
+            "blur_score": 13.952063604665454
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0024.jpg",
+            "blur_score": 12.322421581935487
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0026.jpg",
+            "blur_score": 13.204051936496398
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0027.jpg",
+            "blur_score": 10.191184840165079
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0030.jpg",
+            "blur_score": 10.409614560892805
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0031.jpg",
+            "blur_score": 11.862010911791003
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0032.jpg",
+            "blur_score": 10.220695113705005
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0035.jpg",
+            "blur_score": 9.448528289081878
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0037.jpg",
+            "blur_score": 7.386218966901652
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0038.jpg",
+            "blur_score": 9.525371516574523
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0039.jpg",
+            "blur_score": 10.784381775636575
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0040.jpg",
+            "blur_score": 11.314461158806807
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0042.jpg",
+            "blur_score": 9.901755302911624
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0043.jpg",
+            "blur_score": 8.53226022211311
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0044.jpg",
+            "blur_score": 9.445357863427489
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0046.jpg",
+            "blur_score": 9.399154662154615
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0048.jpg",
+            "blur_score": 8.50019073014846
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0049.jpg",
+            "blur_score": 6.708903349572211
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\ALL\\all_pro\\all_pro_0050.jpg",
+            "blur_score": 7.519645289925393
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_dyk\\cervix_dyk_0014.jpg",
+            "blur_score": 6.792823370953556
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_dyk\\cervix_dyk_0015.jpg",
+            "blur_score": 8.42113343992969
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_dyk\\cervix_dyk_0026.jpg",
+            "blur_score": 8.694091053621378
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_dyk\\cervix_dyk_0046.jpg",
+            "blur_score": 8.375392844536691
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_dyk\\cervix_dyk_0050.jpg",
+            "blur_score": 11.020534348775982
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_koc\\cervix_koc_0006.jpg",
+            "blur_score": 14.485153064131737
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_mep\\cervix_mep_0033.jpg",
+            "blur_score": 14.299201956950128
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_mep\\cervix_mep_0034.jpg",
+            "blur_score": 10.629889201140031
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0003.jpg",
+            "blur_score": 7.616771577493637
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0005.jpg",
+            "blur_score": 8.518451688913046
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0009.jpg",
+            "blur_score": 11.868373650693684
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0011.jpg",
+            "blur_score": 9.971823192900047
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0012.jpg",
+            "blur_score": 13.846176144608762
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0013.jpg",
+            "blur_score": 7.9866507216211176
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0014.jpg",
+            "blur_score": 9.894589910050854
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0019.jpg",
+            "blur_score": 6.573907662168494
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0024.jpg",
+            "blur_score": 14.094144012778997
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0025.jpg",
+            "blur_score": 5.141232137320912
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0026.jpg",
+            "blur_score": 10.28865803941153
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0028.jpg",
+            "blur_score": 7.469284053891897
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0038.jpg",
+            "blur_score": 6.7203325795562705
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0039.jpg",
+            "blur_score": 7.925659003609326
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0043.jpg",
+            "blur_score": 8.149986266158521
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0045.jpg",
+            "blur_score": 8.29252203424403
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0046.jpg",
+            "blur_score": 7.542419370205607
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0047.jpg",
+            "blur_score": 12.018767326837406
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Cervical Cancer\\cervix_pab\\cervix_pab_0048.jpg",
+            "blur_score": 11.684707116277423
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Lung and Colon Cancer\\lung_aca\\lung_aca_0035.jpg",
+            "blur_score": 12.820202896778937
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Lung and Colon Cancer\\lung_bnt\\lung_bnt_0036.jpg",
+            "blur_score": 14.531379694803036
+        },
+        {
+            "path": "c:\\IBM Quantathon\\Dataset\\Multi Cancer\\Lung and Colon Cancer\\lung_scc\\lung_scc_0005.jpg",
+            "blur_score": 13.687895571289118
+        }
+    ],
+    "subclass_details": {
+        "ALL/all_benign": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "ALL/all_early": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "ALL/all_pre": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "ALL/all_pro": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Brain Cancer/brain_glioma": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Brain Cancer/brain_menin": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Brain Cancer/brain_tumor": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Breast Cancer/breast_benign": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Breast Cancer/breast_malignant": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Cervical Cancer/cervix_dyk": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Cervical Cancer/cervix_koc": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Cervical Cancer/cervix_mep": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Cervical Cancer/cervix_pab": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Cervical Cancer/cervix_sfi": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Kidney Cancer/kidney_normal": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Kidney Cancer/kidney_tumor": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lung and Colon Cancer/colon_aca": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lung and Colon Cancer/colon_bnt": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lung and Colon Cancer/lung_aca": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lung and Colon Cancer/lung_bnt": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lung and Colon Cancer/lung_scc": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lymphoma/lymph_cll": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lymphoma/lymph_fl": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Lymphoma/lymph_mcl": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Oral Cancer/oral_normal": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        },
+        "Oral Cancer/oral_scc": {
+            "count": 50,
+            "sizes": [
+                "512x512"
+            ],
+            "formats": [
+                ".JPG"
+            ],
+            "errors": 0
+        }
+    }
+}
