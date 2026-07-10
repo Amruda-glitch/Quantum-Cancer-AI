@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Model files
+*.pth
+
+# NumPy data
+*.npy
+
+# Generated outputs
+outputs/
+
+# Optional
+.vscode/
+.idea/
