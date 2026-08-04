@@ -1,5 +1,3 @@
-cat > README.md << 'EOF'
-
 # Quantum-Cancer-AI
 
 Quantum-Enhanced Medical Imaging for Multi-Class Cancer Detection
