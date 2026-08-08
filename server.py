@@ -10,6 +10,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.transforms as T
 from http.server import SimpleHTTPRequestHandler, HTTPServer
+from fastapi import FastAPI
+
+# Vercel looks specifically for a top-level variable named 'app'
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Quantum Cancer Detection API is running"}
 
 # Add project root to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
